@@ -1,0 +1,816 @@
+{
+  "timestamp": "2026-07-02T23:38:54.089629",
+  "ranking": [
+    {
+      "category": "达恰用品",
+      "keyword_ru": "инструменты для дачи",
+      "keyword_en": "dacha tools",
+      "tags": [
+        "蓝海",
+        "旺季5-8月",
+        "轻小件"
+      ],
+      "total_score": 11,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 105.43,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果738个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论18条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家8家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比0.3%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.55",
+        "rating_variance": 1,
+        "rating_variance_detail": "低评分占比27.6%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 旺季5-8月, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 738,
+        "avg_price": 952,
+        "avg_reviews": 59,
+        "avg_rating": 4.46,
+        "unique_sellers": 6,
+        "ozon_self_ratio": 0.0026,
+        "price_concentration": 0.5456,
+        "low_rating_ratio": 0.2763,
+        "top10_avg_reviews": 18,
+        "top10_avg_rating": 4.28,
+        "top10_seller_count": 8,
+        "price_min": 218,
+        "price_max": 1522
+      }
+    },
+    {
+      "category": "车载配件-手机支架",
+      "keyword_ru": "держатель для телефона в авто с зарядкой",
+      "keyword_en": "car phone holder wireless charging",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件"
+      ],
+      "total_score": 11,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 32.5,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果390个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论58条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家6家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比7.6%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.50",
+        "rating_variance": 1,
+        "rating_variance_detail": "低评分占比20.6%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 全年品, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 390,
+        "avg_price": 1287,
+        "avg_reviews": 29,
+        "avg_rating": 4.61,
+        "unique_sellers": 11,
+        "ozon_self_ratio": 0.0757,
+        "price_concentration": 0.5047,
+        "low_rating_ratio": 0.2063,
+        "top10_avg_reviews": 58,
+        "top10_avg_rating": 4.48,
+        "top10_seller_count": 6,
+        "price_min": 408,
+        "price_max": 4999
+      }
+    },
+    {
+      "category": "园艺/达恰工具",
+      "keyword_ru": "садовые ножницы",
+      "keyword_en": "pruning shears",
+      "tags": [
+        "蓝海",
+        "旺季7-9月",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 8.54,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果111个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论64条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家9家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比4.3%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.53",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比16.6%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 旺季7-9月, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 111,
+        "avg_price": 904,
+        "avg_reviews": 133,
+        "avg_rating": 4.62,
+        "unique_sellers": 12,
+        "ozon_self_ratio": 0.043,
+        "price_concentration": 0.5308,
+        "low_rating_ratio": 0.1662,
+        "top10_avg_reviews": 64,
+        "top10_avg_rating": 4.49,
+        "top10_seller_count": 9,
+        "price_min": 169,
+        "price_max": 2809
+      }
+    },
+    {
+      "category": "宠物智能用品-小型犬",
+      "keyword_ru": " автокормушка для собак малых пород",
+      "keyword_en": "small dog automatic feeder",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 53.23,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果692个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论29条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家4家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比1.5%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.42",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比18.4%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 全年品, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 692,
+        "avg_price": 373,
+        "avg_reviews": 32,
+        "avg_rating": 4.71,
+        "unique_sellers": 12,
+        "ozon_self_ratio": 0.0151,
+        "price_concentration": 0.4179,
+        "low_rating_ratio": 0.1844,
+        "top10_avg_reviews": 29,
+        "top10_avg_rating": 4.69,
+        "top10_seller_count": 4,
+        "price_min": 236,
+        "price_max": 1541
+      }
+    },
+    {
+      "category": "俄语书法/教育用品",
+      "keyword_ru": "набор для каллиграфии",
+      "keyword_en": "calligraphy set",
+      "tags": [
+        "政策红利",
+        "新需求",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 16.64,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果233个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论25条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家7家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比0.7%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.46",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比15.8%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 政策红利, 新需求, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 233,
+        "avg_price": 626,
+        "avg_reviews": 78,
+        "avg_rating": 4.57,
+        "unique_sellers": 13,
+        "ozon_self_ratio": 0.0069,
+        "price_concentration": 0.4649,
+        "low_rating_ratio": 0.1581,
+        "top10_avg_reviews": 25,
+        "top10_avg_rating": 4.42,
+        "top10_seller_count": 7,
+        "price_min": 134,
+        "price_max": 2476
+      }
+    },
+    {
+      "category": "家居收纳-冰箱收纳",
+      "keyword_ru": "органайзер для холодильника",
+      "keyword_en": "fridge organizer",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 25.42,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果305个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论51条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家9家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比0.1%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.48",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比20.0%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 刚需, 全年品, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 305,
+        "avg_price": 340,
+        "avg_reviews": 132,
+        "avg_rating": 4.49,
+        "unique_sellers": 11,
+        "ozon_self_ratio": 0.0012,
+        "price_concentration": 0.4834,
+        "low_rating_ratio": 0.2,
+        "top10_avg_reviews": 51,
+        "top10_avg_rating": 4.34,
+        "top10_seller_count": 9,
+        "price_min": 154,
+        "price_max": 1938
+      }
+    },
+    {
+      "category": "厨房小工具-调料瓶",
+      "keyword_ru": "контейнеры для специй",
+      "keyword_en": "spice containers",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 37.87,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果568个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论64条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家4家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比0.1%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.51",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比18.1%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 刚需, 全年品, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 568,
+        "avg_price": 991,
+        "avg_reviews": 146,
+        "avg_rating": 4.36,
+        "unique_sellers": 14,
+        "ozon_self_ratio": 0.0012,
+        "price_concentration": 0.5125,
+        "low_rating_ratio": 0.1813,
+        "top10_avg_reviews": 64,
+        "top10_avg_rating": 4.17,
+        "top10_seller_count": 4,
+        "price_min": 230,
+        "price_max": 2956
+      }
+    },
+    {
+      "category": "厨房收纳-折叠置物架",
+      "keyword_ru": "складная полка для кухни",
+      "keyword_en": "foldable kitchen shelf",
+      "tags": [
+        "刚需",
+        "全年品",
+        "中等体积"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 19.12,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果153个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论36条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家4家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比5.1%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.42",
+        "rating_variance": 1,
+        "rating_variance_detail": "低评分占比28.8%",
+        "rFBS_fitness": 0.5,
+        "rFBS_fitness_detail": "标签: 刚需, 全年品, 中等体积"
+      },
+      "metrics": {
+        "total_search_results": 153,
+        "avg_price": 960,
+        "avg_reviews": 58,
+        "avg_rating": 4.64,
+        "unique_sellers": 7,
+        "ozon_self_ratio": 0.0515,
+        "price_concentration": 0.4174,
+        "low_rating_ratio": 0.2879,
+        "top10_avg_reviews": 36,
+        "top10_avg_rating": 4.56,
+        "top10_seller_count": 4,
+        "price_min": 169,
+        "price_max": 2853
+      }
+    },
+    {
+      "category": "达恰迷你园艺工具",
+      "keyword_ru": "набор инструментов для сада мини",
+      "keyword_en": "mini garden tools set",
+      "tags": [
+        "蓝海",
+        "旺季4-9月",
+        "轻小件"
+      ],
+      "total_score": 10.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 25.6,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果256个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论75条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家6家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比6.9%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.44",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比19.5%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 旺季4-9月, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 256,
+        "avg_price": 794,
+        "avg_reviews": 57,
+        "avg_rating": 4.39,
+        "unique_sellers": 9,
+        "ozon_self_ratio": 0.0688,
+        "price_concentration": 0.4383,
+        "low_rating_ratio": 0.195,
+        "top10_avg_reviews": 75,
+        "top10_avg_rating": 4.3,
+        "top10_seller_count": 6,
+        "price_min": 108,
+        "price_max": 1664
+      }
+    },
+    {
+      "category": "冬季保暖-加热手套",
+      "keyword_ru": "перчатки с подогревом USB",
+      "keyword_en": "USB heated gloves",
+      "tags": [
+        "探索",
+        "旺季10-2月",
+        "轻小件"
+      ],
+      "total_score": 10,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 12.6,
+      "dimensions": {
+        "search_volume": 1,
+        "search_volume_detail": "搜索结果63个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论16条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家5家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比4.9%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.50",
+        "rating_variance": 1,
+        "rating_variance_detail": "低评分占比20.5%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 探索, 旺季10-2月, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 63,
+        "avg_price": 2117,
+        "avg_reviews": 38,
+        "avg_rating": 4.65,
+        "unique_sellers": 4,
+        "ozon_self_ratio": 0.0489,
+        "price_concentration": 0.4957,
+        "low_rating_ratio": 0.2047,
+        "top10_avg_reviews": 16,
+        "top10_avg_rating": 4.47,
+        "top10_seller_count": 5,
+        "price_min": 305,
+        "price_max": 4622
+      }
+    },
+    {
+      "category": "宠物智能用品-猫",
+      "keyword_ru": "автоматическая кормушка для кошек",
+      "keyword_en": "automatic cat feeder",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件"
+      ],
+      "total_score": 9.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 33.0,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果231个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论50条",
+        "seller_count": 1,
+        "seller_count_detail": "TOP10卖家10家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比1.3%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.45",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比17.3%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 蓝海, 全年品, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 231,
+        "avg_price": 819,
+        "avg_reviews": 130,
+        "avg_rating": 4.74,
+        "unique_sellers": 6,
+        "ozon_self_ratio": 0.0128,
+        "price_concentration": 0.4499,
+        "low_rating_ratio": 0.1727,
+        "top10_avg_reviews": 50,
+        "top10_avg_rating": 4.73,
+        "top10_seller_count": 10,
+        "price_min": 204,
+        "price_max": 1901
+      }
+    },
+    {
+      "category": "车载冬季应急",
+      "keyword_ru": "автоодеяло с подогревом",
+      "keyword_en": "car heated blanket",
+      "tags": [
+        "蓝海",
+        "旺季10-2月",
+        "需备货"
+      ],
+      "total_score": 9.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 60.36,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果664个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论49条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家7家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比6.5%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.57",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比17.3%",
+        "rFBS_fitness": 0,
+        "rFBS_fitness_detail": "标签: 蓝海, 旺季10-2月, 需备货"
+      },
+      "metrics": {
+        "total_search_results": 664,
+        "avg_price": 2184,
+        "avg_reviews": 58,
+        "avg_rating": 4.48,
+        "unique_sellers": 10,
+        "ozon_self_ratio": 0.0651,
+        "price_concentration": 0.5657,
+        "low_rating_ratio": 0.1735,
+        "top10_avg_reviews": 49,
+        "top10_avg_rating": 4.36,
+        "top10_seller_count": 7,
+        "price_min": 390,
+        "price_max": 3013
+      }
+    },
+    {
+      "category": "宠物玩具-互动类",
+      "keyword_ru": "игрушка для кошек интерактивная",
+      "keyword_en": "interactive cat toy",
+      "tags": [
+        "探索",
+        "复购率高",
+        "轻小件"
+      ],
+      "total_score": 9.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 27.67,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果249个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论8条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家5家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比2.9%",
+        "price_concentration": 1,
+        "price_concentration_detail": "价格集中度0.30",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比16.2%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 探索, 复购率高, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 249,
+        "avg_price": 718,
+        "avg_reviews": 55,
+        "avg_rating": 4.22,
+        "unique_sellers": 8,
+        "ozon_self_ratio": 0.0292,
+        "price_concentration": 0.3049,
+        "low_rating_ratio": 0.1616,
+        "top10_avg_reviews": 8,
+        "top10_avg_rating": 4.1,
+        "top10_seller_count": 5,
+        "price_min": 233,
+        "price_max": 2883
+      }
+    },
+    {
+      "category": "冬季保暖-暖手宝",
+      "keyword_ru": "портативный обогреватель для рук",
+      "keyword_en": "portable hand warmer",
+      "tags": [
+        "探索",
+        "旺季10-2月",
+        "轻小件"
+      ],
+      "total_score": 9.5,
+      "recommendation": "🔥 强烈推荐入场",
+      "blue_ocean_index": 7.29,
+      "dimensions": {
+        "search_volume": 1,
+        "search_volume_detail": "搜索结果51个",
+        "avg_reviews": 2,
+        "avg_reviews_detail": "TOP10平均评论5条",
+        "seller_count": 2,
+        "seller_count_detail": "TOP10卖家3家",
+        "ozon_self": 1,
+        "ozon_self_detail": "自营占比2.4%",
+        "price_concentration": 2,
+        "price_concentration_detail": "价格集中度0.40",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比15.7%",
+        "rFBS_fitness": 1,
+        "rFBS_fitness_detail": "标签: 探索, 旺季10-2月, 轻小件"
+      },
+      "metrics": {
+        "total_search_results": 51,
+        "avg_price": 1631,
+        "avg_reviews": 37,
+        "avg_rating": 4.69,
+        "unique_sellers": 6,
+        "ozon_self_ratio": 0.0244,
+        "price_concentration": 0.4026,
+        "low_rating_ratio": 0.1572,
+        "top10_avg_reviews": 5,
+        "top10_avg_rating": 4.63,
+        "top10_seller_count": 3,
+        "price_min": 396,
+        "price_max": 4024
+      }
+    },
+    {
+      "category": "3C配件-手机壳（红海对照）",
+      "keyword_ru": "чехол для телефона",
+      "keyword_en": "phone case",
+      "tags": [
+        "红海对照",
+        "超饱和",
+        "不入场"
+      ],
+      "total_score": 4.0,
+      "recommendation": "❌ 建议放弃",
+      "blue_ocean_index": 262.06,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果12579个",
+        "avg_reviews": 0,
+        "avg_reviews_detail": "TOP10平均评论1654条",
+        "seller_count": 1,
+        "seller_count_detail": "TOP10卖家18家",
+        "ozon_self": 0.5,
+        "ozon_self_detail": "自营占比29.5%",
+        "price_concentration": 0,
+        "price_concentration_detail": "价格集中度0.12",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比10.5%",
+        "rFBS_fitness": 0,
+        "rFBS_fitness_detail": "标签: 红海对照, 超饱和, 不入场"
+      },
+      "metrics": {
+        "total_search_results": 12579,
+        "avg_price": 252,
+        "avg_reviews": 1121,
+        "avg_rating": 4.45,
+        "unique_sellers": 47,
+        "ozon_self_ratio": 0.295,
+        "price_concentration": 0.1247,
+        "low_rating_ratio": 0.1052,
+        "top10_avg_reviews": 1654,
+        "top10_avg_rating": 4.37,
+        "top10_seller_count": 18,
+        "price_min": 77,
+        "price_max": 1307
+      }
+    },
+    {
+      "category": "宠物保暖衣（红海对照）",
+      "keyword_ru": "зимняя одежда для собак",
+      "keyword_en": "winter dog clothes",
+      "tags": [
+        "红海对照",
+        "退货率高",
+        "不入场"
+      ],
+      "total_score": 3.0,
+      "recommendation": "❌ 建议放弃",
+      "blue_ocean_index": 194.32,
+      "dimensions": {
+        "search_volume": 2,
+        "search_volume_detail": "搜索结果18072个",
+        "avg_reviews": 0,
+        "avg_reviews_detail": "TOP10平均评论686条",
+        "seller_count": 0,
+        "seller_count_detail": "TOP10卖家21家",
+        "ozon_self": 0.5,
+        "ozon_self_detail": "自营占比28.1%",
+        "price_concentration": 0,
+        "price_concentration_detail": "价格集中度0.11",
+        "rating_variance": 0.5,
+        "rating_variance_detail": "低评分占比11.7%",
+        "rFBS_fitness": 0,
+        "rFBS_fitness_detail": "标签: 红海对照, 退货率高, 不入场"
+      },
+      "metrics": {
+        "total_search_results": 18072,
+        "avg_price": 425,
+        "avg_reviews": 1010,
+        "avg_rating": 4.44,
+        "unique_sellers": 92,
+        "ozon_self_ratio": 0.2815,
+        "price_concentration": 0.1107,
+        "low_rating_ratio": 0.1168,
+        "top10_avg_reviews": 686,
+        "top10_avg_rating": 4.4,
+        "top10_seller_count": 21,
+        "price_min": 213,
+        "price_max": 2004
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "达恰用品",
+      "message": "「达恰用品」蓝海评分11分，强烈推荐入场！",
+      "score": 11,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "车载配件-手机支架",
+      "message": "「车载配件-手机支架」蓝海评分11分，强烈推荐入场！",
+      "score": 11,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "园艺/达恰工具",
+      "message": "「园艺/达恰工具」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "宠物智能用品-小型犬",
+      "message": "「宠物智能用品-小型犬」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "俄语书法/教育用品",
+      "message": "「俄语书法/教育用品」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "家居收纳-冰箱收纳",
+      "message": "「家居收纳-冰箱收纳」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "厨房小工具-调料瓶",
+      "message": "「厨房小工具-调料瓶」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "厨房收纳-折叠置物架",
+      "message": "「厨房收纳-折叠置物架」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "达恰迷你园艺工具",
+      "message": "「达恰迷你园艺工具」蓝海评分10.5分，强烈推荐入场！",
+      "score": 10.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "冬季保暖-加热手套",
+      "message": "「冬季保暖-加热手套」蓝海评分10分，强烈推荐入场！",
+      "score": 10,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "宠物智能用品-猫",
+      "message": "「宠物智能用品-猫」蓝海评分9.5分，强烈推荐入场！",
+      "score": 9.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "车载冬季应急",
+      "message": "「车载冬季应急」蓝海评分9.5分，强烈推荐入场！",
+      "score": 9.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "宠物玩具-互动类",
+      "message": "「宠物玩具-互动类」蓝海评分9.5分，强烈推荐入场！",
+      "score": 9.5,
+      "priority": "high"
+    },
+    {
+      "type": "🟢 新蓝海发现",
+      "category": "冬季保暖-暖手宝",
+      "message": "「冬季保暖-暖手宝」蓝海评分9.5分，强烈推荐入场！",
+      "score": 9.5,
+      "priority": "high"
+    }
+  ],
+  "summary": {
+    "total_categories": 16,
+    "strong_recommend": 14,
+    "conditional": 0,
+    "avoid": 2,
+    "avg_score": 9.41
+  }
+}

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozon蓝海监控仪表盘</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #1e293b;
+            --bg-hover: #334155;
+            --border: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-yellow: #f59e0b;
+            --accent-orange: #f97316;
+            --accent-purple: #8b5cf6;
+            --accent-cyan: #06b6d4;
+            --accent-pink: #ec4899;
+            --gradient-fire: linear-gradient(135deg, #f59e0b, #ef4444);
+            --gradient-ocean: linear-gradient(135deg, #06b6d4, #3b82f6);
+            --gradient-avoid: linear-gradient(135deg, #64748b, #475569);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        /* 顶部导航 */
+        .top-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .top-bar h1 {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-bar h1 .icon {
+            background: var(--gradient-ocean);
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .top-bar .meta {
+            font-size: 13px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .top-bar .meta .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-live { background: rgba(16,185,129,0.2); color: var(--accent-green); }
+        .badge-demo { background: rgba(249,158,11,0.2); color: var(--accent-yellow); }
+
+        /* 主内容 */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* 告警栏 */
+        .alerts-bar {
+            margin-bottom: 24px;
+        }
+
+        .alert-item {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            font-weight: 500;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn { from { transform: translateY(-10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+        .alert-high { background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3); color: #fca5a5; }
+        .alert-medium { background: rgba(249,158,11,0.15); border: 1px solid rgba(249,158,11,0.3); color: #fcd34d; }
+        .alert-low { background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: #6ee7b7; }
+
+        /* 统计卡片 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        .stat-card .label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        .stat-card .sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .stat-fire .value { color: var(--accent-red); }
+        .stat-ocean .value { color: var(--accent-blue); }
+        .stat-avoid .value { color: var(--text-muted); }
+        .stat-score .value { color: var(--accent-cyan); }
+
+        /* 双列布局 */
+        .dual-panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .panel h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* 蓝海排行榜 */
+        .ranking-list {
+            list-style: none;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: rgba(255,255,255,0.03);
+            transition: background 0.2s;
+            cursor: pointer;
+        }
+
+        .ranking-item:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .ranking-item .rank {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+
+        .rank-1 { background: var(--gradient-fire); color: #fff; }
+        .rank-2 { background: linear-gradient(135deg, #f97316, #f59e0b); color: #fff; }
+        .rank-3 { background: linear-gradient(135deg, #8b5cf6, #6366f1); color: #fff; }
+        .rank-default { background: var(--bg-hover); color: var(--text-secondary); }
+
+        .ranking-item .info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .ranking-item .cat-name {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .ranking-item .cat-tags {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .ranking-item .score-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .score-bar .bar {
+            width: 60px;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--bg-hover);
+            overflow: hidden;
+        }
+
+        .score-bar .fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .score-bar .num {
+            font-size: 14px;
+            font-weight: 700;
+            min-width: 28px;
+        }
+
+        .fill-high { background: var(--gradient-fire); }
+        .fill-medium { background: var(--gradient-ocean); }
+        .fill-low { background: var(--gradient-avoid); }
+
+        /* 品类详情 */
+        .detail-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .detail-panel h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .detail-metric {
+            padding: 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.03);
+        }
+
+        .detail-metric .dm-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .detail-metric .dm-value {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .detail-metric .dm-unit {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .dimension-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .dimension-table th {
+            font-size: 12px;
+            color: var(--text-secondary);
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dimension-table td {
+            font-size: 14px;
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba(51,65,85,0.5);
+        }
+
+        .dim-score {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .dim-2 { background: rgba(16,185,129,0.2); color: var(--accent-green); }
+        .dim-1 { background: rgba(59,130,246,0.2); color: var(--accent-blue); }
+        .dim-05 { background: rgba(249,158,11,0.2); color: var(--accent-yellow); }
+        .dim-0 { background: rgba(239,68,68,0.2); color: var(--accent-red); }
+
+        /* 价格分布图 */
+        .chart-container {
+            height: 280px;
+            position: relative;
+        }
+
+        /* 数据导入区 */
+        .import-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .import-section h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .import-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .import-row textarea {
+            flex: 1;
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px;
+            color: var(--text-primary);
+            font-size: 13px;
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary { background: var(--accent-blue); color: #fff; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-demo { background: var(--accent-yellow); color: #1e293b; }
+        .btn-demo:hover { background: #d97706; }
+        .btn-secondary { background: var(--bg-hover); color: var(--text-primary); }
+        .btn-secondary:hover { background: #475569; }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .dual-panel { grid-template-columns: 1fr; }
+            .detail-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            .main-content { padding: 16px; }
+            .top-bar { padding: 12px 16px; }
+        }
+
+        /* 空状态 */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .empty-state .icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        /* 选中态 */
+        .ranking-item.selected {
+            background: rgba(59,130,246,0.15);
+            border: 1px solid rgba(59,130,246,0.3);
+        }
+
+        /* 标签 */
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-right: 4px;
+        }
+
+        .tag-blue-ocean { background: rgba(6,182,212,0.2); color: var(--accent-cyan); }
+        .tag-red-ocean { background: rgba(239,68,68,0.2); color: var(--accent-red); }
+        .tag-season { background: rgba(139,92,246,0.2); color: var(--accent-purple); }
+        .tag-light { background: rgba(16,185,129,0.2); color: var(--accent-green); }
+        .tag-policy { background: rgba(249,158,11,0.2); color: var(--accent-yellow); }
+        .tag-explore { background: rgba(236,72,153,0.2); color: var(--accent-pink); }
+
+        /* 分隔线 */
+        .divider {
+            border-top: 1px solid var(--border);
+            margin: 24px 0;
+        }
+
+        /* 运行指引 */
+        .guide-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .guide-section h2 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+
+        .guide-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .guide-step .step-num {
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            background: var(--accent-blue);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .guide-step .step-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .guide-step code {
+            background: rgba(59,130,246,0.15);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <div class="top-bar">
+        <h1>
+            <span class="icon">🔍</span>
+            Ozon蓝海监控仪表盘
+        </h1>
+        <div class="meta">
+            <span id="update-time">等待数据...</span>
+            <span id="data-badge" class="badge badge-demo">DEMO</span>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <!-- 数据导入区 -->
+        <div class="import-section">
+            <h2>📥 数据导入</h2>
+            <!-- 远程数据源配置 -->
+            <div class="remote-config" style="margin-bottom:16px;">
+                <h3 style="font-size:14px;color:var(--accent-cyan);margin-bottom:8px;">🌐 远程数据源（部署到GitHub后启用）</h3>
+                <div style="display:flex;gap:8px;align-items:center;">
+                    <input type="text" id="remote-url" placeholder="https://raw.githubusercontent.com/{用户名}/{仓库名}/main/dashboard/data.json" 
+                           style="flex:1;padding:8px 12px;background:var(--bg-primary);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-size:13px;">
+                    <button class="btn btn-primary" onclick="applyRemoteUrl()">连接</button>
+                    <button class="btn btn-secondary" onclick="clearRemoteUrl()">断开</button>
+                </div>
+                <p style="font-size:12px;color:var(--text-muted);margin-top:6px;">配置GitHub仓库地址后，Dashboard将自动加载最新监控数据</p>
+            </div>
+            <!-- 手动导入 -->
+            <div class="import-row">
+                <textarea id="data-input" placeholder="将 monitor.py 输出的 JSON 数据粘贴到这里，或点击「加载演示数据」查看效果..."></textarea>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <button class="btn btn-primary" onclick="loadImportedData()">导入数据</button>
+                    <button class="btn btn-demo" onclick="loadDemoData()">加载演示数据</button>
+                    <button class="btn btn-secondary" onclick="loadFromFile()">从文件加载</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 告警栏 -->
+        <div class="alerts-bar" id="alerts-bar"></div>
+
+        <!-- 统计概览 -->
+        <div class="stats-grid" id="stats-grid">
+            <div class="stat-card stat-fire">
+                <div class="label">🔥 强烈推荐入场</div>
+                <div class="value" id="stat-strong">-</div>
+                <div class="sub">评分 ≥ 7分的品类数</div>
+            </div>
+            <div class="stat-card stat-ocean">
+                <div class="label">🌊 有条件入场</div>
+                <div class="value" id="stat-conditional">-</div>
+                <div class="sub">评分 5-6分的品类数</div>
+            </div>
+            <div class="stat-card stat-avoid">
+                <div class="label">❌ 建议放弃</div>
+                <div class="value" id="stat-avoid">-</div>
+                <div class="sub">评分 ≤ 4分的品类数</div>
+            </div>
+            <div class="stat-card stat-score">
+                <div class="label">📊 平均蓝海评分</div>
+                <div class="value" id="stat-avg">-</div>
+                <div class="sub">所有品类平均分</div>
+            </div>
+        </div>
+
+        <!-- 排行 + 图表双列 -->
+        <div class="dual-panel">
+            <!-- 蓝海排行榜 -->
+            <div class="panel">
+                <h2>🏆 蓝海品类排行榜</h2>
+                <ul class="ranking-list" id="ranking-list"></ul>
+            </div>
+
+            <!-- 评分分布图 -->
+            <div class="panel">
+                <h2>📊 蓝海评分分布</h2>
+                <div class="chart-container">
+                    <canvas id="score-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- 价格分布 + 指标对比 -->
+        <div class="dual-panel">
+            <div class="panel">
+                <h2>💰 价格区间分布</h2>
+                <div class="chart-container">
+                    <canvas id="price-chart"></canvas>
+                </div>
+            </div>
+            <div class="panel">
+                <h2>📈 TOP10竞争指标</h2>
+                <div class="chart-container">
+                    <canvas id="competition-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- 品类详情 -->
+        <div class="detail-panel" id="detail-panel" style="display:none;">
+            <h2 id="detail-title">品类详情</h2>
+            <div class="detail-grid" id="detail-grid"></div>
+            <table class="dimension-table" id="dimension-table">
+                <thead>
+                    <tr>
+                        <th>评分维度</th>
+                        <th>得分</th>
+                        <th>详情</th>
+                        <th>判断标准</th>
+                    </tr>
+                </thead>
+                <tbody id="dimension-tbody"></tbody>
+            </table>
+        </div>
+
+        <!-- 使用指引 -->
+        <div class="guide-section">
+            <h2>📖 如何使用自动监控系统</h2>
+            <div class="guide-step">
+                <span class="step-num">1</span>
+                <span class="step-text">安装依赖: <code>pip install playwright</code> 然后 <code>playwright install chromium</code></span>
+            </div>
+            <div class="guide-step">
+                <span class="step-num">2</span>
+                <span class="step-text">运行监控脚本: <code>python monitor.py</code>（爬取实时数据）或 <code>python monitor.py --demo</code>（生成演示数据）</span>
+            </div>
+            <div class="guide-step">
+                <span class="step-num">3</span>
+                <span class="step-text">运行分析引擎: <code>python analyzer.py</code>（计算蓝海评分和告警）</span>
+            </div>
+            <div class="guide-step">
+                <span class="step-num">4</span>
+                <span class="step-text">打开本仪表盘，点击「从文件加载」导入 <code>dashboard/data.json</code></span>
+            </div>
+            <div class="guide-step">
+                <span class="step-num">5</span>
+                <span class="step-text">设置Windows定时任务: 每天北京时间06:00自动运行 <code>monitor.py + analyzer.py</code></span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

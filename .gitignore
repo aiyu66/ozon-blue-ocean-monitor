@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# 数据文件（历史数据较大，不推到仓库）
+data/history/
+data/analysis_history/
+
+# 临时文件
+*.tmp
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Playwright
+playwright/.local-browsers/
+
+# 生成脚本（不需要推送）
+generate-icons.js
