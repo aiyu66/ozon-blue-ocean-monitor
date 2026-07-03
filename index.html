@@ -451,9 +451,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 // 工具函数
 // ============================================================
 function build1688Url(keyword){
-  // 1688新版搜索URL（支持UTF-8），动态编码避免乱码
+  // 1688官方搜索接口（s.1688.com），encodeURIComponent确保UTF-8正确传输
+  // 注意：www.1688.com/search/ 路径不存在会404，必须用此接口
   if(!keyword) return '#';
-  return 'https://www.1688.com/search/?keywords='+encodeURIComponent(keyword);
+  return 'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(keyword)+'&n=y';
 }
 function buildPddUrl(keyword){
   if(!keyword) return '#';
