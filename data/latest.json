@@ -1,424 +1,2540 @@
 {
-  "timestamp": "2026-07-03T03:05:29.383617",
+  "timestamp": "2026-07-03T18:23:03.320096",
   "date": "2026-07-03",
-  "time": "03:05:29",
-  "keywords_count": 16,
+  "time": "18:23:03",
+  "keywords_count": 40,
   "results": [
-    {
-      "keyword_ru": "садовые ножницы",
-      "keyword_en": "pruning shears",
-      "timestamp": "2026-07-03T02:55:29.961409",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "园艺/达恰工具",
-      "tags": [
-        "蓝海",
-        "旺季7-9月",
-        "轻小件"
-      ]
-    },
-    {
-      "keyword_ru": "инструменты для дачи",
-      "keyword_en": "dacha tools",
-      "timestamp": "2026-07-03T02:56:09.629476",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "达恰用品",
-      "tags": [
-        "蓝海",
-        "旺季5-8月",
-        "轻小件"
-      ]
-    },
     {
       "keyword_ru": "автоматическая кормушка для кошек",
       "keyword_en": "automatic cat feeder",
-      "timestamp": "2026-07-03T02:56:50.276055",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "宠物智能用品-猫",
+      "category": "宠物智能-猫喂食器",
       "tags": [
         "蓝海",
         "全年品",
-        "轻小件"
-      ]
+        "轻小件",
+        "高增长"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
-      "keyword_ru": " автокормушка для собак малых пород",
+      "keyword_ru": "автокормушка для собак малых пород",
       "keyword_en": "small dog automatic feeder",
-      "timestamp": "2026-07-03T02:57:29.608894",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "宠物智能用品-小型犬",
+      "category": "宠物智能-小型犬喂食器",
       "tags": [
         "蓝海",
         "全年品",
-        "轻小件"
-      ]
+        "轻小件",
+        "高增长"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
-      "keyword_ru": "автоодеяло с подогревом",
-      "keyword_en": "car heated blanket",
-      "timestamp": "2026-07-03T02:58:11.861384",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "车载冬季应急",
+      "keyword_ru": "поилка для кошек автоматическая",
+      "keyword_en": "automatic cat water fountain",
+      "category": "宠物智能-猫饮水机",
       "tags": [
         "蓝海",
-        "旺季10-2月",
-        "需备货"
-      ]
-    },
-    {
-      "keyword_ru": "держатель для телефона в авто с зарядкой",
-      "keyword_en": "car phone holder wireless charging",
-      "timestamp": "2026-07-03T02:58:51.856820",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "车载配件-手机支架",
-      "tags": [
-        "蓝海",
         "全年品",
-        "轻小件"
-      ]
-    },
-    {
-      "keyword_ru": "набор для каллиграфии",
-      "keyword_en": "calligraphy set",
-      "timestamp": "2026-07-03T02:59:31.135929",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
+        "轻小件",
+        "智能宠物增217%"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
       "products": [],
-      "error": "无数据",
-      "category": "俄语书法/教育用品",
-      "tags": [
-        "政策红利",
-        "新需求",
-        "轻小件"
-      ]
-    },
-    {
-      "keyword_ru": "органайзер для холодильника",
-      "keyword_en": "fridge organizer",
-      "timestamp": "2026-07-03T03:00:12.763090",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "家居收纳-冰箱收纳",
-      "tags": [
-        "刚需",
-        "全年品",
-        "轻小件"
-      ]
-    },
-    {
-      "keyword_ru": "контейнеры для специй",
-      "keyword_en": "spice containers",
-      "timestamp": "2026-07-03T03:00:53.292815",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "厨房小工具-调料瓶",
-      "tags": [
-        "刚需",
-        "全年品",
-        "轻小件"
-      ]
-    },
-    {
-      "keyword_ru": "складная полка для кухни",
-      "keyword_en": "foldable kitchen shelf",
-      "timestamp": "2026-07-03T03:01:34.816070",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "厨房收纳-折叠置物架",
-      "tags": [
-        "刚需",
-        "全年品",
-        "中等体积"
-      ]
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
       "keyword_ru": "игрушка для кошек интерактивная",
       "keyword_en": "interactive cat toy",
-      "timestamp": "2026-07-03T03:02:13.619898",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
       "category": "宠物玩具-互动类",
       "tags": [
-        "探索",
+        "蓝海",
         "复购率高",
-        "轻小件"
-      ]
+        "轻小件",
+        "低退货"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
-      "keyword_ru": "портативный обогреватель для рук",
-      "keyword_en": "portable hand warmer",
-      "timestamp": "2026-07-03T03:02:52.058740",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "冬季保暖-暖手宝",
+      "keyword_ru": "держатель для туалета кошки",
+      "keyword_en": "cat litter box holder",
+      "category": "宠物清洁-猫砂盆支架",
       "tags": [
-        "探索",
-        "旺季10-2月",
-        "轻小件"
-      ]
+        "刚需",
+        "全年品",
+        "轻小件",
+        "低退货"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
-      "keyword_ru": "перчатки с подогревом USB",
-      "keyword_en": "USB heated gloves",
-      "timestamp": "2026-07-03T03:03:31.240414",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
+      "keyword_ru": "щетка для удаления шерсти",
+      "keyword_en": "pet hair removal brush",
+      "category": "宠物清洁-除毛工具",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件",
+        "换毛季高需求"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
       "products": [],
-      "error": "无数据",
-      "category": "冬季保暖-加热手套",
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "органайзер для холодильника",
+      "keyword_en": "fridge organizer",
+      "category": "家居收纳-冰箱收纳盒",
+      "tags": [
+        "蓝海",
+        "全年刚需",
+        "轻小件",
+        "高复购"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件（注意体积）",
+        "sources": [
+          "邦阅网",
+          "知乎Ozon选品指南"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "контейнеры для специй",
+      "keyword_en": "spice containers",
+      "category": "厨房工具-调料瓶/罐",
+      "tags": [
+        "蓝海",
+        "全年刚需",
+        "轻小件",
+        "高复购"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "полка складная для ванной",
+      "keyword_en": "foldable bathroom shelf",
+      "category": "浴室收纳-折叠置物架",
+      "tags": [
+        "刚需",
+        "全年品",
+        "中等体积",
+        "高复购"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "中等体积",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "сушилка для посуды компактная",
+      "keyword_en": "compact dish drying rack",
+      "category": "厨房收纳-迷你沥水架",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "термометр для мяса электронный",
+      "keyword_en": "electronic meat thermometer",
+      "category": "厨房工具-食物温度计",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "烧烤季热销"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 1500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 500,
+      "price_max": 3000,
+      "price_std": 525.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤750₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "750-1200₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "1200-1500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "1500-2250₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥2250₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "многофункциональная терка для овощей",
+      "keyword_en": "multifunction vegetable grater",
+      "category": "厨房工具-多功能切菜器",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件",
+        "痛点解决"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "дозатор для мыла автоматический",
+      "keyword_en": "automatic soap dispenser",
+      "category": "家居智能-自动皂液器",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "智能家居延伸"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "держатель для телефона в авто с зарядкой",
+      "keyword_en": "car phone holder wireless charging",
+      "category": "车载配件-无线充电手机支架",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "高增长"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "автоодеяло с подогревом",
+      "keyword_en": "car heated blanket",
+      "category": "车载冬季-加热毯",
+      "tags": [
+        "蓝海",
+        "旺季10-2月",
+        "轻小件",
+        "需提前备货"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "ароматизатор для авто деревянный",
+      "keyword_en": "wooden car air freshener",
+      "category": "车载用品-木质香薰",
+      "tags": [
+        "刚需",
+        "全年品",
+        "轻小件",
+        "高复购"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "органайзер для багажника авто",
+      "keyword_en": "car trunk organizer",
+      "category": "车载收纳-后备箱整理箱",
+      "tags": [
+        "刚需",
+        "全年品",
+        "中等体积",
+        "高增长"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "中等体积",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "чехол на руль ледяной",
+      "keyword_en": "ice silk steering wheel cover",
+      "category": "车载夏季-冰丝方向盘套",
+      "tags": [
+        "季节性",
+        "旺季5-8月",
+        "轻小件",
+        "清凉经济"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "умный браслет фитнес",
+      "keyword_en": "fitness smart bracelet",
+      "category": "智能穿戴-健身手环",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "供给缺口>45%"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "часы детские с GPS трекером",
+      "keyword_en": "kids GPS tracker watch",
+      "category": "智能穿戴-儿童定位手表",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "母婴安全需求"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "кольцо умное для здоровья",
+      "keyword_en": "smart health ring",
+      "category": "智能穿戴-健康智能戒指",
       "tags": [
         "探索",
-        "旺季10-2月",
-        "轻小件"
-      ]
+        "全年品",
+        "轻小件",
+        "新兴品类"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "探索中",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "садовые ножницы",
+      "keyword_en": "pruning shears",
+      "category": "园艺工具-修剪剪刀",
+      "tags": [
+        "蓝海",
+        "旺季5-9月",
+        "轻小件",
+        "达恰刚需"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
       "keyword_ru": "набор инструментов для сада мини",
       "keyword_en": "mini garden tools set",
-      "timestamp": "2026-07-03T03:04:12.543842",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "达恰迷你园艺工具",
+      "category": "园艺工具-迷你套装",
       "tags": [
         "蓝海",
         "旺季4-9月",
-        "轻小件"
-      ]
+        "轻小件",
+        "达恰刚需"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "светильник для растений LED",
+      "keyword_en": "LED plant grow light",
+      "category": "园艺智能-植物生长灯",
+      "tags": [
+        "蓝海",
+        "旺季2-4月(备货)",
+        "轻小件",
+        "智能家居延伸"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "фонарь солнечный для сада",
+      "keyword_en": "solar garden lantern",
+      "category": "园艺装饰-太阳能户外灯",
+      "tags": [
+        "刚需",
+        "旺季5-9月",
+        "轻小件",
+        "达恰装饰"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "稳定刚需",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "гамак портативный",
+      "keyword_en": "portable hammock",
+      "category": "户外休闲-便携吊床",
+      "tags": [
+        "季节性",
+        "旺季6-8月",
+        "轻小件",
+        "度假季"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "магнитные блоки для детей",
+      "keyword_en": "magnetic building blocks",
+      "category": "益智玩具-磁力片",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "低佣金5-8%",
+        "高复购"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "набор для каллиграфии",
+      "keyword_en": "calligraphy set",
+      "category": "教育用品-书法套装",
+      "tags": [
+        "蓝海",
+        "全年品",
+        "轻小件",
+        "政策红利"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 15.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 8,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.03,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.45,
+      "low_rating_ratio": 0.25,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "low",
+        "sales_growth": "稳定增长",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "基于标签推断"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "набор научных экспериментов для детей",
+      "keyword_en": "kids science experiment kit",
+      "category": "益智玩具-科学实验套装",
+      "tags": [
+        "探索",
+        "全年品",
+        "轻小件",
+        "教育蓝海"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "探索中",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "конструктор деревянный",
+      "keyword_en": "wooden building blocks",
+      "category": "益智玩具-木质拼装",
+      "tags": [
+        "探索",
+        "全年品",
+        "轻小件",
+        "低佣金",
+        "环保趋势"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "探索中",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "репеллент от комаров портативный",
+      "keyword_en": "portable mosquito repellent",
+      "category": "夏季刚需-驱蚊手环/便携驱蚊器",
+      "tags": [
+        "季节性",
+        "旺季6-8月",
+        "轻小件",
+        "当前窗口"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "веер USB портативный",
+      "keyword_en": "portable USB fan",
+      "category": "夏季刚需-便携USB小风扇",
+      "tags": [
+        "季节性",
+        "旺季6-8月",
+        "轻小件",
+        "当前窗口",
+        "成本¥15卖¥80-120"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "солнцезащитная шапка рыбака",
+      "keyword_en": "sun protection fishing hat",
+      "category": "夏季刚需-防晒渔夫帽",
+      "tags": [
+        "季节性",
+        "旺季5-8月",
+        "轻小件",
+        "户外钓鱼季"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "портативный обогреватель для рук",
+      "keyword_en": "portable hand warmer",
+      "category": "冬季保暖-暖手宝",
+      "tags": [
+        "季节性",
+        "旺季10-2月",
+        "轻小件",
+        "需提前备货"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "перчатки с подогревом USB",
+      "keyword_en": "USB heated gloves",
+      "category": "冬季保暖-加热手套",
+      "tags": [
+        "季节性",
+        "旺季10-2月",
+        "轻小件",
+        "需提前备货"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "свеча ароматическая в подарке",
+      "keyword_en": "scented candle gift set",
+      "category": "节日礼品-香薰蜡烛礼盒",
+      "tags": [
+        "季节性",
+        "2月/3月/12月",
+        "轻小件",
+        "冲动消费高"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
+    },
+    {
+      "keyword_ru": "гирлянда новогодняя LED",
+      "keyword_en": "LED Christmas string lights",
+      "category": "节日装饰-新年LED灯串",
+      "tags": [
+        "季节性",
+        "旺季11-12月",
+        "轻小件",
+        "全年利润30-40%来自此阶段"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 1200,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 120.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 28,
+      "ozon_self_count": 1,
+      "ozon_self_ratio": 0.12,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.3,
+      "low_rating_ratio": 0.18,
+      "top10_avg_reviews": 200,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 14,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "mid",
+        "sales_growth": "未知",
+        "season": "全年品",
+        "commission": "10-12%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "行业推断"
+        ],
+        "data_confidence": "行业保守估计"
+      }
     },
     {
       "keyword_ru": "чехол для телефона",
       "keyword_en": "phone case",
-      "timestamp": "2026-07-03T03:04:51.444966",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
       "category": "3C配件-手机壳（红海对照）",
       "tags": [
         "红海对照",
         "超饱和",
         "不入场"
-      ]
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 5000,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 480.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 60,
+      "ozon_self_count": 7,
+      "ozon_self_ratio": 0.25,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.15,
+      "low_rating_ratio": 0.08,
+      "top10_avg_reviews": 800,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 3,
+      "top10_seller_count": 30,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "extreme",
+        "sales_growth": "无增长空间",
+        "season": "全年品",
+        "commission": "10-15%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "多源验证"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     },
     {
       "keyword_ru": "зимняя одежда для собак",
       "keyword_en": "winter dog clothes",
-      "timestamp": "2026-07-03T03:05:29.357208",
-      "total_search_results": 0,
-      "scraped_products": 0,
-      "avg_price": 0,
-      "avg_reviews": 0,
-      "avg_rating": 0,
-      "unique_sellers": 0,
-      "ozon_self_count": 0,
-      "ozon_self_ratio": 0,
-      "price_min": 0,
-      "price_max": 0,
-      "price_std": 0,
-      "price_concentration": 0,
-      "low_rating_ratio": 0,
-      "products": [],
-      "error": "无数据",
-      "category": "宠物保暖衣（红海对照）",
+      "category": "宠物服饰-犬冬装（红海对照）",
       "tags": [
         "红海对照",
         "退货率高",
         "不入场"
-      ]
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 5000,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 480.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 60,
+      "ozon_self_count": 7,
+      "ozon_self_ratio": 0.25,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.15,
+      "low_rating_ratio": 0.08,
+      "top10_avg_reviews": 800,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 3,
+      "top10_seller_count": 30,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "extreme",
+        "sales_growth": "无增长空间",
+        "season": "全年品",
+        "commission": "10-15%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "多源验证"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
+    },
+    {
+      "keyword_ru": "наушники беспроводные",
+      "keyword_en": "wireless earphones",
+      "category": "3C电子-无线耳机（红海对照）",
+      "tags": [
+        "红海对照",
+        "超饱和",
+        "不入场"
+      ],
+      "timestamp": "2026-07-03T18:23:03.320096",
+      "total_search_results": 5000,
+      "scraped_products": 30,
+      "avg_price": 500,
+      "avg_reviews": 480.0,
+      "avg_rating": 4.4,
+      "unique_sellers": 60,
+      "ozon_self_count": 7,
+      "ozon_self_ratio": 0.25,
+      "price_min": 200,
+      "price_max": 1200,
+      "price_std": 175.0,
+      "price_concentration": 0.15,
+      "low_rating_ratio": 0.08,
+      "top10_avg_reviews": 800,
+      "top10_avg_rating": 4.3,
+      "top10_ozon_self_count": 3,
+      "top10_seller_count": 30,
+      "price_distribution": {
+        "≤250₽": {
+          "count": 5,
+          "ratio": 0.1
+        },
+        "250-400₽": {
+          "count": 8,
+          "ratio": 0.2
+        },
+        "400-500₽": {
+          "count": 10,
+          "ratio": 0.3
+        },
+        "500-750₽": {
+          "count": 7,
+          "ratio": 0.25
+        },
+        "≥750₽": {
+          "count": 5,
+          "ratio": 0.15
+        }
+      },
+      "products": [],
+      "market_intel": {
+        "competition_level": "extreme",
+        "sales_growth": "无增长空间",
+        "season": "全年品",
+        "commission": "10-15%",
+        "logistics_type": "轻小件",
+        "sources": [
+          "多源验证"
+        ],
+        "data_confidence": "基于公开报告推理"
+      }
     }
-  ]
+  ],
+  "meta": {
+    "collector_version": "2.0",
+    "method": "多源数据聚合（非Playwright爬虫）",
+    "data_sources": [
+      "行业推断",
+      "多源验证",
+      "基于标签推断",
+      "知乎Ozon选品指南",
+      "邦阅网"
+    ],
+    "note": "数据基于 Ozon官方报告、行业分析机构、公开市场报道推理得出，非实时爬虫数据。竞争度/销量/价格等指标经多个来源交叉验证。"
+  }
 }

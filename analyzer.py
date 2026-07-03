@@ -239,17 +239,26 @@ class BlueOceanAnalyzer:
 
         return alerts
 
-    def generate_dashboard_data(self, analyses, alerts=None):
+    def generate_dashboard_data(self, analyses, alerts=None, raw_results=None):
         """生成Dashboard专用数据"""
         # 蓝海指数排行
         ranking = []
+        
+        # 构建 market_intel 索引（从原始数据中提取）
+        intel_map = {}
+        if raw_results:
+            for r in raw_results:
+                cat = r.get("category", "")
+                if "market_intel" in r:
+                    intel_map[cat] = r["market_intel"]
+
         for a in analyses:
             # 计算蓝海指数 = 搜索结果数 / (卖家数 + 1)
             search_results = a["metrics"]["total_search_results"]
             sellers = a["metrics"]["unique_sellers"]
             blue_ocean_index = search_results / (sellers + 1) if sellers > 0 else search_results
 
-            ranking.append({
+            entry = {
                 "category": a["category"],
                 "keyword_ru": a["keyword_ru"],
                 "keyword_en": a["keyword_en"],
@@ -259,7 +268,11 @@ class BlueOceanAnalyzer:
                 "blue_ocean_index": round(blue_ocean_index, 2),
                 "dimensions": a["dimensions"],
                 "metrics": a["metrics"],
-            })
+            }
+            # 附加市场情报
+            if a["category"] in intel_map:
+                entry["market_intel"] = intel_map[a["category"]]
+            ranking.append(entry)
 
         return {
             "timestamp": datetime.now().isoformat(),
@@ -313,8 +326,9 @@ def run_analysis():
     # 检测告警
     alerts = analyzer.detect_alerts(analyses, previous_data)
 
-    # 生成Dashboard数据
-    dashboard_data = analyzer.generate_dashboard_data(analyses, alerts)
+    # 生成Dashboard数据（传入原始数据以保留market_intel）
+    raw_results = current_data.get("results", [])
+    dashboard_data = analyzer.generate_dashboard_data(analyses, alerts, raw_results)
 
     # 保存分析结果
     analysis_dir = PROJECT_ROOT / "data" / "analysis_history"
