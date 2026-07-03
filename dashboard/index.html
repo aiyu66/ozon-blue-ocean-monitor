@@ -450,10 +450,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
 // ============================================================
 // 工具函数
 // ============================================================
-function build1688Url(keyword){
-  // 1688官方搜索接口（s.1688.com），encodeURIComponent确保UTF-8正确传输
-  // 注意：www.1688.com/search/ 路径不存在会404，必须用此接口
+function build1688Url(keyword, fallbackUrl){
+  // 优先使用Python预生成的GBK编码URL（s.1688.com要求GBK编码，JS的encodeURIComponent是UTF-8会乱码）
+  if(fallbackUrl && fallbackUrl !== '#') return fallbackUrl;
   if(!keyword) return '#';
+  // 兜底：使用encodeURIComponent编码（可能乱码但至少能跳转）
   return 'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(keyword)+'&n=y';
 }
 function buildPddUrl(keyword){
@@ -705,7 +706,7 @@ function renderPicks(data){
           <div class="data-row"><span class="dt">利润预估</span><span class="dd" style="color:var(--accent-green)">${s.profit_estimate||'-'}</span></div>
           <div class="data-row"><span class="dt">供应商</span><span class="dd">${s.suppliers_count||'-'}</span></div>
           <div style="margin-top:10px">
-            <a href="${build1688Url(s.search_keyword)}" target="_blank" class="btn-link btn-sourcing" style="width:100%;justify-content:center">🛒 ${s.platform||'1688'}搜索「${s.search_keyword||''}」</a>
+            <a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" class="btn-link btn-sourcing" style="width:100%;justify-content:center">🛒 ${s.platform||'1688'}搜索「${s.search_keyword||''}」</a>
           </div>
         </div>
       </div>
@@ -769,14 +770,14 @@ function renderSourcing(data){
     return `<tr>
       <td class="s-cat">${p.rank}. ${p.category}</td>
       <td>${s.platform||'1688'}</td>
-      <td><a href="${build1688Url(s.search_keyword)}" target="_blank" style="color:var(--accent-blue);text-decoration:none">${s.search_keyword||'-'}</a></td>
+      <td><a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" style="color:var(--accent-blue);text-decoration:none">${s.search_keyword||'-'}</a></td>
       <td class="s-price">${s.price_range_cny||'-'}</td>
       <td style="white-space:nowrap">${s.suggested_ozon_price||'-'}<br><span style="font-size:11px;color:var(--text-muted)">(${s.suggested_ozon_price_cny||'-'})</span></td>
       <td class="s-profit ${pc}">${s.profit_estimate||'-'}</td>
       <td style="font-size:12px;color:var(--text-secondary)">${s.suppliers_count||'-'}</td>
       <td>
-        <a href="${build1688Url(s.search_keyword)}" target="_blank" class="btn-link btn-sourcing" style="font-size:11px;padding:5px 10px">去搜索</a>
-        ${s.backup_platform?`<br><a href="${buildPddUrl(s.search_keyword)}" target="_blank" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-top:4px;display:inline-block">备选: ${s.backup_platform}</a>`:''}
+        <a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" class="btn-link btn-sourcing" style="font-size:11px;padding:5px 10px">去搜索</a>
+        ${s.backup_platform?`<br><a href="${s.backup_platform==='拼多多'?buildPddUrl(s.search_keyword):build1688Url(s.search_keyword, s.backup_search_url)}" target="_blank" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-top:4px;display:inline-block">备选: ${s.backup_platform}</a>`:''}
       </td>
     </tr>`;
   }).join('');

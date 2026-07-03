@@ -14,12 +14,36 @@
       "source": "Ozon 2026年3月上半月官方数据",
       "url": "https://ozon123.com/ozon-summer-selection-2026/",
       "data_points": [
-        {"item": "苗木/幼苗", "growth": "+1600%", "heat": "🔥🔥🔥🔥🔥"},
-        {"item": "覆盖物/树皮", "growth": "+850%", "heat": "🔥🔥🔥🔥"},
-        {"item": "铁锹", "growth": "+550%", "heat": "🔥🔥🔥🔥"},
-        {"item": "修枝剪", "growth": "+400%", "heat": "🔥🔥🔥🔥"},
-        {"item": "园艺手推车", "growth": "+350%", "heat": "🔥🔥🔥"},
-        {"item": "园艺土壤", "growth": "+200%", "heat": "🔥🔥🔥"}
+        {
+          "item": "苗木/幼苗",
+          "growth": "+1600%",
+          "heat": "🔥🔥🔥🔥🔥"
+        },
+        {
+          "item": "覆盖物/树皮",
+          "growth": "+850%",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "铁锹",
+          "growth": "+550%",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "修枝剪",
+          "growth": "+400%",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "园艺手推车",
+          "growth": "+350%",
+          "heat": "🔥🔥🔥"
+        },
+        {
+          "item": "园艺土壤",
+          "growth": "+200%",
+          "heat": "🔥🔥🔥"
+        }
       ],
       "insight": "50%园艺订单来自5万人口以下小城镇和农村，Z世代对达恰文化好感度高达83分（满分100）"
     },
@@ -28,9 +52,21 @@
       "source": "Ozon 2025 Q3报告 + 亿恩网",
       "url": "https://www.ennews.com/article-290553-1.html",
       "data_points": [
-        {"item": "宠物智能用品类目增速", "growth": "+217%", "heat": "🔥🔥🔥🔥🔥"},
-        {"item": "自动喂食器月销量", "growth": "1706件", "heat": "🔥🔥🔥🔥"},
-        {"item": "加购率", "growth": "78.7%", "heat": "🔥🔥🔥🔥"}
+        {
+          "item": "宠物智能用品类目增速",
+          "growth": "+217%",
+          "heat": "🔥🔥🔥🔥🔥"
+        },
+        {
+          "item": "自动喂食器月销量",
+          "growth": "1706件",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "加购率",
+          "growth": "78.7%",
+          "heat": "🔥🔥🔥🔥"
+        }
       ],
       "insight": "90%中小卖家扎堆猫抓板/普通喂食器，智能品类竞争远未饱和"
     },
@@ -39,9 +75,21 @@
       "source": "星连ERP Ozon下沉市场选品报告",
       "url": "https://www.nexulas.cn/blog/article/ozon-xuanpin",
       "data_points": [
-        {"item": "覆盖人口", "growth": "1.3亿", "heat": "🔥🔥🔥🔥🔥"},
-        {"item": "交易额增速", "growth": "+200%", "heat": "🔥🔥🔥🔥🔥"},
-        {"item": "订单占比", "growth": "1/3", "heat": "🔥🔥🔥🔥"}
+        {
+          "item": "覆盖人口",
+          "growth": "1.3亿",
+          "heat": "🔥🔥🔥🔥🔥"
+        },
+        {
+          "item": "交易额增速",
+          "growth": "+200%",
+          "heat": "🔥🔥🔥🔥🔥"
+        },
+        {
+          "item": "订单占比",
+          "growth": "1/3",
+          "heat": "🔥🔥🔥🔥"
+        }
       ],
       "insight": "小城镇居民自给自足能力强，工具五金、园艺工具、家居收纳需求旺盛"
     },
@@ -50,11 +98,31 @@
       "source": "Ozon夏季选品指南",
       "url": "https://www.10100.com/article/129343591",
       "data_points": [
-        {"item": "便携烧烤架", "growth": "热销", "heat": "🔥🔥🔥🔥"},
-        {"item": "户外太阳能灯", "growth": "热销", "heat": "🔥🔥🔥🔥"},
-        {"item": "露营折叠椅", "growth": "热销", "heat": "🔥🔥🔥"},
-        {"item": "便携USB风扇", "growth": "热销", "heat": "🔥🔥🔥"},
-        {"item": "儿童水枪泡泡机", "growth": "热销", "heat": "🔥🔥🔥"}
+        {
+          "item": "便携烧烤架",
+          "growth": "热销",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "户外太阳能灯",
+          "growth": "热销",
+          "heat": "🔥🔥🔥🔥"
+        },
+        {
+          "item": "露营折叠椅",
+          "growth": "热销",
+          "heat": "🔥🔥🔥"
+        },
+        {
+          "item": "便携USB风扇",
+          "growth": "热销",
+          "heat": "🔥🔥🔥"
+        },
+        {
+          "item": "儿童水枪泡泡机",
+          "growth": "热销",
+          "heat": "🔥🔥🔥"
+        }
       ],
       "insight": "俄罗斯夏季户外活动需求激增300%以上，全民出动露营、烧烤、钓鱼、达恰"
     }
@@ -79,7 +147,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "修枝剪刀 园艺剪刀批发",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BF%AE%E6%9E%9D%E5%89%AA%E5%88%80%20%E5%9B%AD%E8%89%BA%E5%89%AA%E5%88%80%E6%89%B9%E5%8F%91&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D0%DE%D6%A6%BC%F4%B5%B6%20%D4%B0%D2%D5%BC%F4%B5%B6%C5%FA%B7%A2&n=y",
         "price_range_cny": "5-30元",
         "suggested_ozon_price": "690-1290₽",
         "suggested_ozon_price_cny": "55-103元",
@@ -87,7 +155,8 @@
         "suppliers_count": "1.1万+家",
         "quality_tips": "优先选不锈钢材质，区分专业修枝款和家庭用款",
         "backup_platform": "拼多多",
-        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E5%9B%AD%E8%89%BA%E5%89%AA%E5%88%80"
+        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E5%9B%AD%E8%89%BA%E5%89%AA%E5%88%80",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BF%AE%E6%9E%9D%E5%89%AA%E5%88%80%20%E5%9B%AD%E8%89%BA%E5%89%AA%E5%88%80%E6%89%B9%E5%8F%91&n=y"
       }
     },
     {
@@ -108,7 +177,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "园艺工具套装 迷你 跨境",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%9B%AD%E8%89%BA%E5%B7%A5%E5%85%B7%E5%A5%97%E8%A3%85%20%E8%BF%B7%E4%BD%A0&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D4%B0%D2%D5%B9%A4%BE%DF%CC%D7%D7%B0%20%C3%D4%C4%E3%20%BF%E7%BE%B3&n=y",
         "price_range_cny": "1.6-15元/套",
         "suggested_ozon_price": "450-990₽",
         "suggested_ozon_price_cny": "36-79元",
@@ -116,7 +185,8 @@
         "suppliers_count": "1万+家",
         "quality_tips": "微景观四件套起批¥1.6，选不锈钢材质，搭配收纳袋提高感知价值",
         "backup_platform": "1688",
-        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%9B%AD%E8%89%BA%E5%B7%A5%E5%85%B7%E4%B8%89%E4%BB%B6%E5%A5%97"
+        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D4%B0%D2%D5%B9%A4%BE%DF%CC%D7%D7%B0%20%C3%D4%C4%E3%20%BF%E7%BE%B3",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%9B%AD%E8%89%BA%E5%B7%A5%E5%85%B7%E5%A5%97%E8%A3%85%20%E8%BF%B7%E4%BD%A0%20%E8%B7%A8%E5%A2%83&n=y"
       }
     },
     {
@@ -138,7 +208,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "自动猫喂食器 WiFi 远程 跨境",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E8%87%AA%E5%8A%A8%E7%8C%AB%E5%96%82%E9%A3%9F%E5%99%A8%20WiFi%20%E8%BF%9C%E7%A8%8B&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D7%D4%B6%AF%C3%A8%CE%B9%CA%B3%C6%F7%20WiFi%20%D4%B6%B3%CC%20%BF%E7%BE%B3&n=y",
         "price_range_cny": "100-200元",
         "suggested_ozon_price": "2500-4500₽",
         "suggested_ozon_price_cny": "200-360元",
@@ -146,7 +216,8 @@
         "suppliers_count": "深圳/金华多家",
         "quality_tips": "需EAC认证，优先选WiFi+APP远程投喂+可视款，主图强调'出差旅行无忧'场景",
         "backup_platform": "1688",
-        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%AE%A0%E7%89%A9%E6%99%BA%E8%83%BD%E5%96%82%E9%A3%9F%E5%99%A8%20%E8%B7%A8%E5%A2%83"
+        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D7%D4%B6%AF%C3%A8%CE%B9%CA%B3%C6%F7%20WiFi%20%D4%B6%B3%CC%20%BF%E7%BE%B3",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E8%87%AA%E5%8A%A8%E7%8C%AB%E5%96%82%E9%A3%9F%E5%99%A8%20WiFi%20%E8%BF%9C%E7%A8%8B%20%E8%B7%A8%E5%A2%83&n=y"
       }
     },
     {
@@ -167,7 +238,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "太阳能户外灯 庭院灯 跨境",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%A4%AA%E9%98%B3%E8%83%BD%E6%88%B7%E5%A4%96%E7%81%AF%20%E5%BA%AD%E9%99%A2%E7%81%AF&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%CC%AB%D1%F4%C4%DC%BB%A7%CD%E2%B5%C6%20%CD%A5%D4%BA%B5%C6%20%BF%E7%BE%B3&n=y",
         "price_range_cny": "9-30元/个",
         "suggested_ozon_price": "690-1500₽",
         "suggested_ozon_price_cny": "55-120元",
@@ -175,7 +246,8 @@
         "suppliers_count": "充足",
         "quality_tips": "注意防水等级（IP65以上），多件装提高客单价",
         "backup_platform": "1688",
-        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%A4%AA%E9%98%B3%E8%83%BD%E5%BA%AD%E9%99%A2%E7%81%AF%20%E8%A3%85%E9%A5%B0"
+        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%CC%AB%D1%F4%C4%DC%BB%A7%CD%E2%B5%C6%20%CD%A5%D4%BA%B5%C6%20%BF%E7%BE%B3",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%A4%AA%E9%98%B3%E8%83%BD%E6%88%B7%E5%A4%96%E7%81%AF%20%E5%BA%AD%E9%99%A2%E7%81%AF%20%E8%B7%A8%E5%A2%83&n=y"
       }
     },
     {
@@ -196,7 +268,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "冰箱收纳盒 塑料透明 套装",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%86%B0%E7%AE%B1%E6%94%B6%E7%BA%B3%E7%9B%92%20%E5%A1%91%E6%96%99%E9%80%8F%E6%98%8E%20%E5%A5%97%E8%A3%85&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%B1%F9%CF%E4%CA%D5%C4%C9%BA%D0%20%CB%DC%C1%CF%CD%B8%C3%F7%20%CC%D7%D7%B0&n=y",
         "price_range_cny": "3-15元/个",
         "suggested_ozon_price": "300-800₽",
         "suggested_ozon_price_cny": "24-64元",
@@ -204,7 +276,8 @@
         "suppliers_count": "1.4万+条产品",
         "quality_tips": "套装销售（5-10件套）提高客单价，食品级材质为卖点",
         "backup_platform": "拼多多",
-        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E5%86%B0%E7%AE%B1%E6%94%B6%E7%BA%B3%E7%9B%92%E5%A5%97%E8%A3%85"
+        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E5%86%B0%E7%AE%B1%E6%94%B6%E7%BA%B3%E7%9B%92%E5%A5%97%E8%A3%85",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%86%B0%E7%AE%B1%E6%94%B6%E7%BA%B3%E7%9B%92%20%E5%A1%91%E6%96%99%E9%80%8F%E6%98%8E%20%E5%A5%97%E8%A3%85&n=y"
       }
     },
     {
@@ -225,7 +298,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "折叠烧烤架 便携烧烤炉 户外",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E6%8A%98%E5%8F%A0%E7%83%A7%E7%83%A4%E6%9E%B6%20%E4%BE%BF%E6%90%BA%E7%83%A7%E7%83%A4%E7%82%89&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D5%DB%B5%FE%C9%D5%BF%BE%BC%DC%20%B1%E3%D0%AF%C9%D5%BF%BE%C2%AF%20%BB%A7%CD%E2&n=y",
         "price_range_cny": "20-50元",
         "suggested_ozon_price": "1500-3000₽",
         "suggested_ozon_price_cny": "120-240元",
@@ -233,7 +306,8 @@
         "suppliers_count": "充足",
         "quality_tips": "选折叠款控制物流体积，不锈钢材质溢价更高",
         "backup_platform": "1688",
-        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E5%8F%A0%E7%BA%A7%E5%BD%A2%E7%83%A7%E7%83%A4%E7%82%89"
+        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%D5%DB%B5%FE%C9%D5%BF%BE%BC%DC%20%B1%E3%D0%AF%C9%D5%BF%BE%C2%AF%20%BB%A7%CD%E2",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E6%8A%98%E5%8F%A0%E7%83%A7%E7%83%A4%E6%9E%B6%20%E4%BE%BF%E6%90%BA%E7%83%A7%E7%83%A4%E7%82%89%20%E6%88%B7%E5%A4%96&n=y"
       }
     },
     {
@@ -254,7 +328,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "互动猫玩具 逗猫棒 激光",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BA%92%E5%8A%A8%E7%8C%AB%E7%8E%A9%E5%85%B7%20%E9%80%97%E7%8C%AB%E6%A3%92&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%BB%A5%B6%AF%C3%A8%CD%E6%BE%DF%20%B6%BA%C3%A8%B0%F4%20%BC%A4%B9%E2&n=y",
         "price_range_cny": "3-15元",
         "suggested_ozon_price": "250-500₽",
         "suggested_ozon_price_cny": "20-40元",
@@ -262,7 +336,8 @@
         "suppliers_count": "充足",
         "quality_tips": "选组合装（逗猫棒+激光+球），多SKU组合上架",
         "backup_platform": "拼多多",
-        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E7%8C%AB%E7%8E%A9%E5%85%B7%E4%BA%92%E5%8A%A8"
+        "backup_search_url": "https://mobile.yangkeduo.com/search_result.html?search_key=%E7%8C%AB%E7%8E%A9%E5%85%B7%E4%BA%92%E5%8A%A8",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BA%92%E5%8A%A8%E7%8C%AB%E7%8E%A9%E5%85%B7%20%E9%80%97%E7%8C%AB%E6%A3%92%20%E6%BF%80%E5%85%89&n=y"
       }
     },
     {
@@ -283,7 +358,7 @@
       "sourcing": {
         "platform": "1688",
         "search_keyword": "便携USB小风扇 跨境",
-        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BE%BF%E6%90%BAUSB%E5%B0%8F%E9%A3%8E%E6%89%87%20%E8%B7%A8%E5%A2%83&n=y",
+        "search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%B1%E3%D0%AFUSB%D0%A1%B7%E7%C9%C8%20%BF%E7%BE%B3&n=y",
         "price_range_cny": "8-20元",
         "suggested_ozon_price": "800-1200₽",
         "suggested_ozon_price_cny": "64-96元",
@@ -291,7 +366,8 @@
         "suppliers_count": "充足（深圳/义乌）",
         "quality_tips": "选可充电+多档风速款，桌面/手持两用更受欢迎",
         "backup_platform": "1688",
-        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E6%89%8B%E6%8C%81%E5%B0%8F%E9%A3%8E%E6%89%87%20USB%E5%85%85%E7%94%B5"
+        "backup_search_url": "https://s.1688.com/selloffer/offer_search.htm?keywords=%B1%E3%D0%AFUSB%D0%A1%B7%E7%C9%C8%20%BF%E7%BE%B3",
+        "search_url_utf8": "https://s.1688.com/selloffer/offer_search.htm?keywords=%E4%BE%BF%E6%90%BAUSB%E5%B0%8F%E9%A3%8E%E6%89%87%20%E8%B7%A8%E5%A2%83&n=y"
       }
     }
   ],
@@ -337,8 +413,17 @@
     }
   ],
   "upcoming_alerts": [
-    {"date": "7月中旬", "event": "达恰季备货窗口即将关闭，8月后需求下滑"},
-    {"date": "8月底", "event": "返校季品类开始做选品预热（文具套装、书包）"},
-    {"date": "9月", "event": "冬季品备货启动（暖手宝、加热手套、车载加热毯）"}
+    {
+      "date": "7月中旬",
+      "event": "达恰季备货窗口即将关闭，8月后需求下滑"
+    },
+    {
+      "date": "8月底",
+      "event": "返校季品类开始做选品预热（文具套装、书包）"
+    },
+    {
+      "date": "9月",
+      "event": "冬季品备货启动（暖手宝、加热手套、车载加热毯）"
+    }
   ]
 }

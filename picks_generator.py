@@ -129,9 +129,14 @@ class PicksGenerator:
 
     @staticmethod
     def build_1688_search_url(keyword: str) -> str:
-        """根据中文关键词生成1688搜索URL"""
+        """根据中文关键词生成1688搜索URL（GBK编码，s.1688.com要求）
+
+        注意：s.1688.com 的 keywords 参数必须使用 GBK 编码，
+        使用 UTF-8 编码会导致搜索框中文乱码。
+        """
         from urllib.parse import quote
-        encoded = quote(keyword, safe="")
+        # encoding='gbk' 是关键 — 1688老接口只认识GBK
+        encoded = quote(keyword, safe="", encoding="gbk")
         return f"https://s.1688.com/selloffer/offer_search.htm?keywords={encoded}&n=y"
 
 
