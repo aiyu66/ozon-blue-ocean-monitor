@@ -84,7 +84,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .fill-low{background:linear-gradient(135deg,#64748b,#475569)}
 
 /* 品类详情 */
-.detail-panel{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:24px;display:none}
+.detail-panel{background:var(--bg-card);border:1px solid var(--accent-cyan);border-radius:12px;padding:24px;margin-bottom:24px;display:none;box-shadow:0 0 0 1px rgba(6,182,212,.15),0 8px 32px rgba(6,182,212,.1);animation:detailIn .3s ease-out}
+@keyframes detailIn{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
 .detail-panel.show{display:block}
 .detail-panel h2{font-size:18px;font-weight:700;margin-bottom:16px}
 .detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
@@ -442,6 +443,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
 });
 
 // ============================================================
+// 工具函数
+// ============================================================
+function build1688Url(keyword){
+  // 1688新版搜索URL（支持UTF-8），动态编码避免乱码
+  if(!keyword) return '#';
+  return 'https://www.1688.com/search/?keywords='+encodeURIComponent(keyword);
+}
+function buildPddUrl(keyword){
+  if(!keyword) return '#';
+  return 'https://mobile.yangkeduo.com/search_result.html?search_key='+encodeURIComponent(keyword);
+}
+
+// ============================================================
 // 监控数据加载
 // ============================================================
 function loadMonitorData(){
@@ -504,9 +518,15 @@ function renderRanking(ranking){
 
 function selectCategory(idx){
   document.querySelectorAll('.ranking-item').forEach(el=>el.classList.remove('selected'));
-  document.querySelector(`.ranking-item[data-idx="${idx}"]`).classList.add('selected');
+  const item = document.querySelector(`.ranking-item[data-idx="${idx}"]`);
+  if(item) item.classList.add('selected');
   selectedCategory = currentMonitorData.ranking[idx];
   renderDetail(selectedCategory);
+  // 滚动到详情面板
+  const panel = document.getElementById('detail-panel');
+  if(panel){
+    setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'start'}),100);
+  }
 }
 
 function renderDetail(cat){
@@ -514,6 +534,8 @@ function renderDetail(cat){
   panel.classList.add('show');
   document.getElementById('detail-title').textContent = cat.category+' — 详细分析';
   const m = cat.metrics;
+  const mi = cat.market_intel||{};
+  // 基础指标
   document.getElementById('detail-grid').innerHTML = `
     <div class="detail-metric"><div class="dm-label">蓝海指数</div><div class="dm-value" style="color:var(--accent-cyan)">${cat.blue_ocean_index}</div><div class="dm-unit">需求/竞争比</div></div>
     <div class="detail-metric"><div class="dm-label">平均售价</div><div class="dm-value">${m.avg_price||0}<span class="dm-unit">₽</span></div><div class="dm-unit">¥${((m.avg_price||0)*0.08).toFixed(0)}</div></div>
@@ -523,6 +545,23 @@ function renderDetail(cat){
     <div class="detail-metric"><div class="dm-label">价格集中度</div><div class="dm-value">${(m.price_concentration||0).toFixed(2)}</div><div class="dm-unit">越高=差异化空间大</div></div>
     <div class="detail-metric"><div class="dm-label">低评分占比</div><div class="dm-value">${((m.low_rating_ratio||0)*100).toFixed(1)}<span class="dm-unit">%</span></div><div class="dm-unit">痛点=机会</div></div>
     <div class="detail-metric"><div class="dm-label">搜索结果数</div><div class="dm-value">${m.total_search_results||0}</div><div class="dm-unit">个商品</div></div>`;
+  // 如果有市场情报数据，追加到指标网格
+  if(Object.keys(mi).length>0){
+    const intelHtml = `
+      <div class="detail-metric" style="grid-column:1/-1;background:rgba(6,182,212,.06);border-radius:8px;padding:12px">
+        <div style="font-size:12px;color:var(--accent-cyan);font-weight:700;margin-bottom:8px">📡 市场情报（数据来源验证）</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;font-size:12px">
+          ${mi.competition_level?`<div><span style="color:var(--text-muted)">竞争等级：</span><strong style="color:${mi.competition_level==='low'||mi.competition_level==='mid_low'?'var(--accent-green)':mi.competition_level==='extreme'?'var(--accent-red)':'var(--accent-yellow)'}">${mi.competition_level}</strong></div>`:''}
+          ${mi.sales_growth?`<div><span style="color:var(--text-muted)">销量增速：</span><strong style="color:var(--accent-green)">${mi.sales_growth}</strong></div>`:''}
+          ${mi.season?`<div><span style="color:var(--text-muted)">季节性：</span><strong>${mi.season}</strong></div>`:''}
+          ${mi.commission?`<div><span style="color:var(--text-muted)">佣金：</span><strong>${mi.commission}</strong></div>`:''}
+          ${mi.logistics_type?`<div><span style="color:var(--text-muted)">物流：</span><strong>${mi.logistics_type}</strong></div>`:''}
+          ${mi.ozon_self_risk?`<div><span style="color:var(--text-muted)">自营风险：</span><strong>${mi.ozon_self_risk}</strong></div>`:''}
+        </div>
+        ${(mi.sources&&mi.sources.length)?`<div style="margin-top:8px;font-size:11px;color:var(--text-muted)">📎 数据来源：${mi.sources.join('、')}</div>`:''}
+      </div>`;
+    document.getElementById('detail-grid').innerHTML += intelHtml;
+  }
   const dims = cat.dimensions||{};
   const labels = {
     search_volume:{n:'搜索需求量',cr:'≥100=2,30-100=1,<30=0'},
@@ -660,7 +699,7 @@ function renderPicks(data){
           <div class="data-row"><span class="dt">利润预估</span><span class="dd" style="color:var(--accent-green)">${s.profit_estimate||'-'}</span></div>
           <div class="data-row"><span class="dt">供应商</span><span class="dd">${s.suppliers_count||'-'}</span></div>
           <div style="margin-top:10px">
-            <a href="${s.search_url||'#'}" target="_blank" class="btn-link btn-sourcing" style="width:100%;justify-content:center">🛒 ${s.platform||'1688'}搜索「${s.search_keyword||''}」</a>
+            <a href="${build1688Url(s.search_keyword)}" target="_blank" class="btn-link btn-sourcing" style="width:100%;justify-content:center">🛒 ${s.platform||'1688'}搜索「${s.search_keyword||''}」</a>
           </div>
         </div>
       </div>
@@ -724,14 +763,14 @@ function renderSourcing(data){
     return `<tr>
       <td class="s-cat">${p.rank}. ${p.category}</td>
       <td>${s.platform||'1688'}</td>
-      <td><a href="${s.search_url||'#'}" target="_blank" style="color:var(--accent-blue);text-decoration:none">${s.search_keyword||'-'}</a></td>
+      <td><a href="${build1688Url(s.search_keyword)}" target="_blank" style="color:var(--accent-blue);text-decoration:none">${s.search_keyword||'-'}</a></td>
       <td class="s-price">${s.price_range_cny||'-'}</td>
       <td style="white-space:nowrap">${s.suggested_ozon_price||'-'}<br><span style="font-size:11px;color:var(--text-muted)">(${s.suggested_ozon_price_cny||'-'})</span></td>
       <td class="s-profit ${pc}">${s.profit_estimate||'-'}</td>
       <td style="font-size:12px;color:var(--text-secondary)">${s.suppliers_count||'-'}</td>
       <td>
-        <a href="${s.search_url||'#'}" target="_blank" class="btn-link btn-sourcing" style="font-size:11px;padding:5px 10px">去搜索</a>
-        ${s.backup_platform?`<br><a href="${s.backup_search_url||'#'}" target="_blank" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-top:4px;display:inline-block">备选: ${s.backup_platform}</a>`:''}
+        <a href="${build1688Url(s.search_keyword)}" target="_blank" class="btn-link btn-sourcing" style="font-size:11px;padding:5px 10px">去搜索</a>
+        ${s.backup_platform?`<br><a href="${buildPddUrl(s.search_keyword)}" target="_blank" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-top:4px;display:inline-block">备选: ${s.backup_platform}</a>`:''}
       </td>
     </tr>`;
   }).join('');
