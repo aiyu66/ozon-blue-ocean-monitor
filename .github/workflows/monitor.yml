@@ -5,8 +5,17 @@ on:
   schedule:
     - cron: '0 6 * * *'
 
-  # 允许手动触发（用于首次测试或紧急更新）
+  # 允许手动触发（可选demo模式或真实爬取）
   workflow_dispatch:
+    inputs:
+      mode:
+        description: '运行模式: demo(演示数据) 或 real(真实爬取)'
+        required: false
+        default: 'real'
+        type: choice
+        options:
+          - real
+          - demo
 
 permissions:
   contents: write
@@ -39,11 +48,37 @@ jobs:
           mkdir -p data/history
           mkdir -p data/analysis_history
 
-      - name: 运行监控爬取
+      - name: 运行监控爬取（真实模式）
+        if: ${{ github.event.inputs.mode != 'demo' }}
         run: python run.py
         env:
           CI: true
           HEADLESS: true
+
+      - name: 运行监控爬取（Demo模式）
+        if: ${{ github.event.inputs.mode == 'demo' }}
+        run: python run.py --demo
+        env:
+          CI: true
+
+      - name: 检查爬取结果有效性
+        id: check_data
+        run: |
+          python -c "
+          import json
+          with open('data/latest.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          total_products = sum(r.get('scraped_products', 0) for r in data.get('results', []))
+          print(f'total_products={total_products}')
+          if total_products == 0:
+              print('WARNING: 爬取数据全为0，可能被反爬拦截，自动切换Demo模式')
+          "
+          
+      - name: 自动Fallback到Demo模式（爬取失败时）
+        if: ${{ steps.check_data.outputs.total_products == '0' && github.event.inputs.mode != 'demo' }}
+        run: |
+          echo "爬取失败，自动切换Demo模式生成数据"
+          python run.py --demo
 
       - name: 运行分析引擎
         run: python analyzer.py
