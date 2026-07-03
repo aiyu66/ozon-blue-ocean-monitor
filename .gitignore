@@ -25,3 +25,6 @@ playwright/.local-browsers/
 
 # 生成脚本（不需要推送）
 generate-icons.js
+
+# WorkBuddy 项目数据（不推送到仓库）
+.workbuddy/
