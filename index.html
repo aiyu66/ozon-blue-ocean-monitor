@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ozon蓝海选品仪表盘</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg-primary: #0f172a; --bg-secondary: #1e293b; --bg-card: #1e293b;
+  --bg-hover: #334155; --border: #334155;
+  --text-primary: #f1f5f9; --text-secondary: #94a3b8; --text-muted: #64748b;
+  --accent-blue: #3b82f6; --accent-green: #10b981; --accent-red: #ef4444;
+  --accent-yellow: #f59e0b; --accent-orange: #f97316; --accent-purple: #8b5cf6;
+  --accent-cyan: #06b6d4; --accent-pink: #ec4899;
+  --gradient-fire: linear-gradient(135deg, #f59e0b, #ef4444);
+  --gradient-ocean: linear-gradient(135deg, #06b6d4, #3b82f6);
+  --gradient-green: linear-gradient(135deg, #10b981, #06b6d4);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg-primary);color:var(--text-primary);min-height:100vh}
+.top-bar{background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.top-bar h1{font-size:20px;font-weight:700;display:flex;align-items:center;gap:8px}
+.top-bar h1 .icon{background:var(--gradient-ocean);width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+.top-bar .meta{font-size:13px;color:var(--text-secondary);display:flex;align-items:center;gap:16px}
+.badge{padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600}
+.badge-live{background:rgba(16,185,129,0.2);color:var(--accent-green)}
+.badge-demo{background:rgba(249,158,11,0.2);color:var(--accent-yellow)}
+
+/* Tab导航 */
+.tab-nav{display:flex;gap:2px;background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:0 24px}
+.tab-btn{padding:14px 24px;border:none;background:none;color:var(--text-muted);font-size:14px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
+.tab-btn:hover{color:var(--text-primary)}
+.tab-btn.active{color:var(--accent-cyan);border-bottom-color:var(--accent-cyan)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+.main-content{max-width:1400px;margin:0 auto;padding:24px}
+
+/* 告警 */
+.alerts-bar{margin-bottom:24px}
+.alert-item{padding:12px 16px;border-radius:8px;margin-bottom:8px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:500;animation:slideIn .3s ease}
+@keyframes slideIn{from{transform:translateY(-10px);opacity:0}to{transform:translateY(0);opacity:1}}
+.alert-high{background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);color:#fca5a5}
+.alert-medium{background:rgba(249,158,11,0.15);border:1px solid rgba(249,158,11,0.3);color:#fcd34d}
+.alert-low{background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#6ee7b7}
+
+/* 统计卡片 */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.stat-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:transform .2s,box-shadow .2s}
+.stat-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.stat-card .label{font-size:13px;color:var(--text-secondary);margin-bottom:8px}
+.stat-card .value{font-size:32px;font-weight:800}
+.stat-card .sub{font-size:12px;color:var(--text-muted);margin-top:4px}
+.stat-fire .value{color:var(--accent-red)}
+.stat-ocean .value{color:var(--accent-blue)}
+.stat-avoid .value{color:var(--text-muted)}
+.stat-score .value{color:var(--accent-cyan)}
+
+/* 双列面板 */
+.dual-panel{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
+.panel{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.panel h2{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+
+/* 排行 */
+.ranking-list{list-style:none}
+.ranking-item{display:flex;align-items:center;padding:12px;border-radius:8px;margin-bottom:6px;background:rgba(255,255,255,.03);transition:background .2s;cursor:pointer}
+.ranking-item:hover,.ranking-item.selected{background:rgba(6,182,212,.12)}
+.ranking-item.selected{border:1px solid rgba(6,182,212,.3)}
+.ranking-item .rank{width:28px;height:28px;border-radius:6px;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-right:12px;flex-shrink:0}
+.rank-1{background:var(--gradient-fire);color:#fff}
+.rank-2{background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff}
+.rank-3{background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff}
+.rank-default{background:var(--bg-hover);color:var(--text-secondary)}
+.ranking-item .info{flex:1;min-width:0}
+.ranking-item .cat-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.ranking-item .cat-tags{font-size:11px;color:var(--text-muted)}
+.ranking-item .score-area{display:flex;align-items:center;gap:8px;margin-left:auto}
+.score-area .bar{width:60px;height:6px;border-radius:3px;background:var(--bg-hover);overflow:hidden}
+.score-area .fill{height:100%;border-radius:3px;transition:width .5s ease}
+.score-area .num{font-size:14px;font-weight:700;min-width:28px;text-align:right}
+.fill-high{background:var(--gradient-fire)}
+.fill-medium{background:var(--gradient-ocean)}
+.fill-low{background:linear-gradient(135deg,#64748b,#475569)}
+
+/* 品类详情 */
+.detail-panel{background:var(--bg-card);border:1px solid var(--accent-cyan);border-radius:12px;padding:24px;margin-bottom:24px;display:none;box-shadow:0 0 0 1px rgba(6,182,212,.15),0 8px 32px rgba(6,182,212,.1);animation:detailIn .3s ease-out}
+@keyframes detailIn{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+.detail-panel.show{display:block}
+.detail-panel h2{font-size:18px;font-weight:700;margin-bottom:16px}
+.detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.detail-metric{padding:12px;border-radius:8px;background:rgba(255,255,255,.03)}
+.detail-metric .dm-label{font-size:12px;color:var(--text-secondary)}
+.detail-metric .dm-value{font-size:20px;font-weight:700}
+.detail-metric .dm-unit{font-size:12px;color:var(--text-muted)}
+.dimension-table{width:100%;border-collapse:collapse;margin-top:16px}
+.dimension-table th{font-size:12px;color:var(--text-secondary);padding:8px;text-align:left;border-bottom:1px solid var(--border)}
+.dimension-table td{font-size:14px;padding:10px 8px;border-bottom:1px solid rgba(51,65,85,.5)}
+.dim-score{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:4px;font-size:12px;font-weight:700}
+.dim-2{background:rgba(16,185,129,.2);color:var(--accent-green)}
+.dim-1{background:rgba(59,130,246,.2);color:var(--accent-blue)}
+.dim-05{background:rgba(249,158,11,.2);color:var(--accent-yellow)}
+.dim-0{background:rgba(239,68,68,.2);color:var(--accent-red)}
+
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;margin-right:4px}
+.tag-b{background:rgba(6,182,212,.2);color:var(--accent-cyan)}
+.tag-r{background:rgba(239,68,68,.2);color:var(--accent-red)}
+.tag-s{background:rgba(139,92,246,.2);color:var(--accent-purple)}
+.tag-g{background:rgba(16,185,129,.2);color:var(--accent-green)}
+.tag-y{background:rgba(249,158,11,.2);color:var(--accent-yellow)}
+.tag-p{background:rgba(236,72,153,.2);color:var(--accent-pink)}
+
+.chart-container{height:280px;position:relative}
+
+/* 回到顶部 */
+.back-to-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;color:var(--text-secondary);z-index:200;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .25s,transform .25s}
+.back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.back-to-top:hover{background:var(--bg-hover);color:var(--accent-cyan);border-color:var(--accent-cyan)}
+
+/* ====== 选品日报Tab ====== */
+.picks-grid{display:flex;flex-direction:column;gap:20px}
+.pick-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all .2s}
+.pick-card:hover{border-color:var(--accent-cyan);box-shadow:0 4px 20px rgba(6,182,212,.1)}
+.pick-header{padding:20px 24px;display:flex;align-items:flex-start;gap:16px;border-bottom:1px solid var(--border)}
+.pick-header .rank-badge{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;flex-shrink:0}
+.pick-header .rank-1-bg{background:var(--gradient-fire);color:#fff}
+.pick-header .rank-2-bg{background:linear-gradient(135deg,#f97316,#f59e0b);color:#fff}
+.pick-header .rank-3-bg{background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff}
+.pick-header .pick-info{flex:1}
+.pick-header .pick-title{font-size:18px;font-weight:700;margin-bottom:4px}
+.pick-header .pick-sub{font-size:13px;color:var(--text-secondary);margin-bottom:6px}
+.pick-header .pick-priority{font-size:14px;font-weight:600}
+.pick-header .pick-links{display:flex;flex-direction:column;gap:6px}
+.pick-body{padding:16px 24px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pick-section h4{font-size:13px;font-weight:600;color:var(--accent-cyan);margin-bottom:8px;text-transform:uppercase}
+.pick-section .data-row{display:flex;justify-content:space-between;padding:4px 0;font-size:13px;border-bottom:1px solid rgba(51,65,85,.3)}
+.pick-section .data-row .dt{color:var(--text-secondary)}
+.pick-section .data-row .dd{font-weight:600}
+.pick-reason{padding:12px 24px;background:rgba(6,182,212,.08);font-size:13px;color:var(--text-secondary);line-height:1.6}
+.btn-link{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:all .2s;cursor:pointer;border:none}
+.btn-ozon{background:rgba(59,130,246,.2);color:var(--accent-blue)}
+.btn-ozon:hover{background:rgba(59,130,246,.35)}
+.btn-sourcing{background:rgba(16,185,129,.2);color:var(--accent-green)}
+.btn-sourcing:hover{background:rgba(16,185,129,.35)}
+
+/* 市场趋势区 */
+.trends-section{margin-bottom:24px}
+.trends-section h2{font-size:18px;font-weight:700;margin-bottom:16px}
+.trends-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.trend-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.trend-card h3{font-size:15px;font-weight:700;margin-bottom:4px}
+.trend-card .trend-source{font-size:11px;color:var(--text-muted);margin-bottom:12px}
+.trend-card .trend-url{font-size:11px;color:var(--accent-blue);margin-bottom:12px;word-break:break-all}
+.trend-card .trend-url a{color:var(--accent-blue);text-decoration:none}
+.trend-card .trend-url a:hover{text-decoration:underline}
+.trend-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:13px;border-bottom:1px solid rgba(51,65,85,.3)}
+.trend-item:last-child{border-bottom:none}
+.trend-item .ti-name{color:var(--text-secondary)}
+.trend-item .ti-data{font-weight:700;color:var(--accent-cyan)}
+.trend-insight{padding:10px 14px;margin-top:12px;background:rgba(6,182,212,.08);border-radius:6px;font-size:12px;color:var(--text-secondary);line-height:1.6}
+
+/* 货源匹配Tab */
+.sourcing-table{width:100%;border-collapse:collapse;font-size:13px}
+.sourcing-table th{background:var(--bg-hover);padding:12px;text-align:left;font-size:12px;color:var(--text-secondary);position:sticky;top:0}
+.sourcing-table td{padding:12px;border-bottom:1px solid rgba(51,65,85,.5);vertical-align:top}
+.sourcing-table tr:hover{background:rgba(255,255,255,.03)}
+.sourcing-table .s-cat{font-weight:700;color:var(--text-primary)}
+.sourcing-table .s-price{color:var(--accent-green);font-weight:600;white-space:nowrap}
+.sourcing-table .s-profit{font-weight:600;white-space:nowrap}
+.profit-high{color:var(--accent-green)}
+.profit-mid{color:var(--accent-yellow)}
+.note-text{font-size:12px;color:var(--text-muted);margin-top:6px}
+
+/* 市场概览 */
+.context-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}
+.context-card{padding:16px;border-radius:10px;border:1px solid var(--border)}
+.context-card .c-label{font-size:12px;color:var(--text-secondary);margin-bottom:6px}
+.context-card .c-value{font-size:15px;font-weight:700;line-height:1.5}
+.ctx-blue{background:rgba(59,130,246,.1);border-color:rgba(59,130,246,.3)}
+.ctx-green{background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.3)}
+.ctx-purple{background:rgba(139,92,246,.1);border-color:rgba(139,92,246,.3)}
+
+/* 行动清单 */
+.action-list{list-style:none}
+.action-list li{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid rgba(51,65,85,.3);font-size:13px}
+.action-list li:last-child{border-bottom:none}
+.action-list .a-check{width:20px;height:20px;border-radius:4px;border:2px solid var(--border);flex-shrink:0;margin-top:1px;cursor:pointer;transition:all .2s}
+.action-list .a-check:hover{border-color:var(--accent-cyan)}
+.action-list .a-check.checked{background:var(--accent-green);border-color:var(--accent-green)}
+.action-list .a-text{flex:1;color:var(--text-secondary)}
+.action-list .a-tag{font-size:10px;padding:2px 6px;border-radius:3px;font-weight:600;white-space:nowrap}
+.tag-high{background:rgba(239,68,68,.2);color:var(--accent-red)}
+.tag-mid{background:rgba(249,158,11,.2);color:var(--accent-yellow)}
+
+/* 按钮 */
+.btn{padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s}
+.btn-primary{background:var(--accent-blue);color:#fff}
+.btn-primary:hover{background:#2563eb}
+.btn-demo{background:var(--accent-yellow);color:#1e293b}
+.btn-demo:hover{background:#d97706}
+.btn-secondary{background:var(--bg-hover);color:var(--text-primary)}
+.btn-secondary:hover{background:#475569}
+
+.empty-state{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+.empty-state .icon{font-size:48px;margin-bottom:16px}
+.divider{border-top:1px solid var(--border);margin:24px 0}
+
+.loading{text-align:center;padding:40px;color:var(--text-secondary);font-size:14px}
+.loading .spinner{display:inline-block;width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent-cyan);border-radius:50%;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:1024px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .dual-panel{grid-template-columns:1fr}
+  .detail-grid{grid-template-columns:repeat(2,1fr)}
+  .pick-body{grid-template-columns:1fr}
+  .context-bar{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .stats-grid{grid-template-columns:1fr}
+  .main-content{padding:16px}
+  .tab-btn{padding:12px 16px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1><span class="icon">🔍</span>Ozon蓝海选品仪表盘</h1>
+  <div class="meta">
+    <span id="update-time">等待数据...</span>
+    <span id="data-badge" class="badge badge-live">LIVE</span>
+  </div>
+</div>
+
+<!-- Tab导航 -->
+<div class="tab-nav" id="tab-nav">
+  <button class="tab-btn active" data-tab="monitor">📊 蓝海监控</button>
+  <button class="tab-btn" data-tab="picks">🔥 选品日报</button>
+  <button class="tab-btn" data-tab="sourcing">🔗 货源匹配</button>
+</div>
+
+<div class="main-content">
+
+<!-- ============================================================ -->
+<!-- Tab 1: 蓝海监控 -->
+<!-- ============================================================ -->
+<div class="tab-content active" id="tab-monitor">
+  <div class="alerts-bar" id="alerts-bar"></div>
+  <div class="stats-grid" id="stats-grid">
+    <div class="stat-card stat-fire">
+      <div class="label">🔥 强烈推荐入场</div><div class="value" id="stat-strong">-</div>
+      <div class="sub">评分 ≥ 7分</div>
+    </div>
+    <div class="stat-card stat-ocean">
+      <div class="label">🌊 有条件入场</div><div class="value" id="stat-conditional">-</div>
+      <div class="sub">评分 5-6分</div>
+    </div>
+    <div class="stat-card stat-avoid">
+      <div class="label">❌ 建议放弃</div><div class="value" id="stat-avoid">-</div>
+      <div class="sub">评分 ≤ 4分</div>
+    </div>
+    <div class="stat-card stat-score">
+      <div class="label">📊 平均蓝海评分</div><div class="value" id="stat-avg">-</div>
+      <div class="sub">所有品类平均分</div>
+    </div>
+  </div>
+
+  <div class="dual-panel">
+    <div class="panel">
+      <h2>🏆 蓝海品类排行榜 <span style="font-size:11px;color:var(--text-muted);font-weight:400">— 点击查看详情</span></h2>
+      <ul class="ranking-list" id="ranking-list"></ul>
+    </div>
+    <div class="panel">
+      <h2>📊 蓝海评分分布</h2>
+      <div class="chart-container"><canvas id="score-chart"></canvas></div>
+    </div>
+  </div>
+  <div class="dual-panel">
+    <div class="panel">
+      <h2>💰 价格区间分布</h2>
+      <div class="chart-container"><canvas id="price-chart"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>📈 TOP10竞争指标</h2>
+      <div class="chart-container"><canvas id="competition-chart"></canvas></div>
+    </div>
+  </div>
+
+  <div class="detail-panel" id="detail-panel">
+    <h2 id="detail-title">品类详情</h2>
+    <div class="detail-grid" id="detail-grid"></div>
+    <table class="dimension-table">
+      <thead><tr><th>评分维度</th><th>得分</th><th>详情</th><th>标准</th></tr></thead>
+      <tbody id="dimension-tbody"></tbody>
+    </table>
+    <!-- 快速链接区 -->
+    <div id="detail-links" style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;"></div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- Tab 2: 选品日报 -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-picks">
+  <div id="picks-loader" class="loading"><span class="spinner"></span>正在加载选品日报数据...</div>
+
+  <!-- 市场概览 -->
+  <div id="picks-context" style="display:none">
+    <div class="context-bar" id="context-bar"></div>
+
+    <!-- 市场趋势 -->
+    <div class="trends-section">
+      <h2>📈 市场趋势情报</h2>
+      <div class="trends-grid" id="trends-grid"></div>
+    </div>
+
+    <!-- 选品推荐 -->
+    <div class="picks-section" style="margin-bottom:24px">
+      <h2 style="font-size:18px;font-weight:700;margin-bottom:16px">🔥 今日选品推荐</h2>
+      <div class="picks-grid" id="picks-grid"></div>
+    </div>
+
+    <!-- 红海警告 -->
+    <div class="panel" style="margin-bottom:24px" id="red-ocean-panel">
+      <h2>⚠️ 今日避坑提醒</h2>
+      <div id="red-ocean-list"></div>
+    </div>
+
+    <!-- 行动清单 -->
+    <div class="panel">
+      <h2>✅ 今日行动清单</h2>
+      <ul class="action-list" id="action-list"></ul>
+    </div>
+
+    <!-- 事件提醒 -->
+    <div class="panel" style="margin-top:16px">
+      <h2>📅 即将到来的事件</h2>
+      <div id="upcoming-alerts"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- Tab 3: 货源匹配 -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-sourcing">
+  <div id="sourcing-loader" class="loading"><span class="spinner"></span>正在加载货源数据...</div>
+
+  <div id="sourcing-content" style="display:none">
+    <div class="panel" style="margin-bottom:24px">
+      <h2>🔗 1688货源匹配总表 <span style="font-size:12px;color:var(--text-muted);font-weight:400">— 点击链接直达搜索</span></h2>
+      <!-- 桌面表格 -->
+      <div style="overflow-x:auto">
+        <table class="sourcing-table" id="sourcing-table">
+          <thead>
+            <tr>
+              <th>品类</th><th>平台</th><th>搜索关键词</th><th>价格(CNY)</th>
+              <th>建议Ozon售价</th><th>利润预估</th><th>供应商</th><th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="sourcing-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dual-panel">
+      <div class="panel">
+        <h2>💡 货源搜索小贴士</h2>
+        <ul style="list-style:none;font-size:13px;color:var(--text-secondary);line-height:2">
+          <li>🔹 1688搜索后按「成交额」排序找头部供应商</li>
+          <li>🔹 优先选择支持「一件代发」或「跨境专供」的</li>
+          <li>🔹 联系客服确认是否支持rFBS代发模式</li>
+          <li>🔹 电子产品需确认EAC认证（部分供应商可提供）</li>
+          <li>🔹 要求供应商提供白底图+场景图，加快Listing制作</li>
+          <li>🔹 拼多多/淘宝可作为比价参考，1688为主渠道</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>📦 利润估算参考</h2>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:2">
+          <div style="display:flex;justify-content:space-between"><span>采购成本</span><span>1688批发价</span></div>
+          <div style="display:flex;justify-content:space-between"><span>rFBS物流（轻小件）</span><span style="color:var(--accent-yellow)">≈¥12-20/件</span></div>
+          <div style="display:flex;justify-content:space-between"><span>Ozon佣金</span><span style="color:var(--accent-yellow)">5-15%（依品类）</span></div>
+          <div style="display:flex;justify-content:space-between"><span>卢布汇率（参考）</span><span style="color:var(--text-muted)">1₽ ≈ ¥0.08</span></div>
+          <div style="border-top:1px solid var(--border);margin-top:8px;padding-top:8px;display:flex;justify-content:space-between;font-weight:700">
+            <span>健康毛利率</span><span style="color:var(--accent-green)">≥30%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-weight:700">
+            <span>理想净利润率</span><span style="color:var(--accent-green)">15-25%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- .main-content -->
+
+<script>
+// ============================================================
+// 全局数据
+// ============================================================
+let currentMonitorData = null;
+let currentPicksData = null;
+let selectedCategory = null;
+let scoreChart = null, priceChart = null, competitionChart = null;
+
+// ============================================================
+// DEMO 监控数据（离线演示用）
+// ============================================================
+const DEMO_DATA = {
+  "timestamp":"2026-07-02T22:00:00",
+  "ranking":[
+    {"category":"园艺/达恰工具","keyword_ru":"садовые ножницы","keyword_en":"pruning shears","tags":["蓝海","旺季7-9月","轻小件"],"total_score":8,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":45.2,"dimensions":{"search_volume":2,"search_volume_detail":"需求较大","avg_reviews":2,"avg_reviews_detail":"TOP10平均评论少","seller_count":2,"seller_count_detail":"TOP10卖家集中","ozon_self":1,"ozon_self_detail":"自营占比低","price_concentration":2,"price_concentration_detail":"价格分散机会大","rating_variance":1,"rating_variance_detail":"有一定差评空间","rFBS_fitness":1,"rFBS_fitness_detail":"轻小件完美适配"},"metrics":{"total_search_results":320,"avg_price":590,"avg_reviews":45,"avg_rating":4.6,"unique_sellers":7,"ozon_self_ratio":0.03,"price_concentration":0.52,"low_rating_ratio":0.22,"top10_avg_reviews":38,"top10_avg_rating":4.5,"top10_seller_count":6,"top10_ozon_self_count":0,"price_min":180,"price_max":1890,"price_distribution":{"≤300₽":{"count":5,"ratio":0.08},"300-500₽":{"count":12,"ratio":0.2},"500-1000₽":{"count":25,"ratio":0.42},"1000-1500₽":{"count":10,"ratio":0.17},"≥1500₽":{"count":8,"ratio":0.13}}}},
+    {"category":"达恰迷你园艺工具","keyword_ru":"набор инструментов для сада мини","keyword_en":"mini garden tools set","tags":["蓝海","旺季4-9月","轻小件"],"total_score":8,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":38.7,"dimensions":{"search_volume":1,"avg_reviews":2,"seller_count":2,"ozon_self":1,"price_concentration":2,"rating_variance":1,"rFBS_fitness":1},"metrics":{"total_search_results":155,"avg_price":470,"avg_reviews":28,"avg_rating":4.5,"unique_sellers":4,"ozon_self_ratio":0.02,"price_concentration":0.48,"low_rating_ratio":0.18,"top10_avg_reviews":22,"top10_avg_rating":4.4,"top10_seller_count":4,"top10_ozon_self_count":0,"price_min":220,"price_max":1200}},
+    {"category":"宠物智能用品-猫","keyword_ru":"автоматическая кормушка для кошек","keyword_en":"automatic cat feeder","tags":["蓝海","全年品","轻小件"],"total_score":8,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":52.3,"dimensions":{"search_volume":2,"avg_reviews":2,"seller_count":2,"ozon_self":1,"price_concentration":1,"rating_variance":1,"rFBS_fitness":1},"metrics":{"total_search_results":420,"avg_price":980,"avg_reviews":62,"avg_rating":4.4,"unique_sellers":8,"ozon_self_ratio":0.04,"price_concentration":0.35,"low_rating_ratio":0.2,"top10_avg_reviews":55,"top10_avg_rating":4.3,"top10_seller_count":7,"top10_ozon_self_count":0,"price_min":350,"price_max":2500}},
+    {"category":"车载冬季应急","keyword_ru":"автоодеяло с подогревом","keyword_en":"car heated blanket","tags":["蓝海","旺季10-2月","需备货"],"total_score":8,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":41.8,"dimensions":{"search_volume":2,"avg_reviews":2,"seller_count":2,"ozon_self":1,"price_concentration":2,"rating_variance":0.5,"rFBS_fitness":0.5},"metrics":{"total_search_results":280,"avg_price":1650,"avg_reviews":38,"avg_rating":4.7,"unique_sellers":6,"ozon_self_ratio":0.02,"price_concentration":0.55,"low_rating_ratio":0.08,"top10_avg_reviews":30,"top10_avg_rating":4.6,"top10_seller_count":5,"top10_ozon_self_count":0,"price_min":500,"price_max":4200}},
+    {"category":"达恰用品","keyword_ru":"инструменты для дачи","keyword_en":"dacha tools","tags":["蓝海","旺季5-8月","轻小件"],"total_score":7,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":32.5,"dimensions":{"search_volume":1,"avg_reviews":2,"seller_count":2,"ozon_self":1,"price_concentration":2,"rating_variance":0,"rFBS_fitness":1},"metrics":{"total_search_results":195,"avg_price":720,"avg_reviews":35,"avg_rating":4.8,"unique_sellers":5,"ozon_self_ratio":0.05,"price_concentration":0.45,"low_rating_ratio":0.05,"top10_avg_reviews":28,"top10_avg_rating":4.7,"top10_seller_count":5,"top10_ozon_self_count":0,"price_min":250,"price_max":2100}},
+    {"category":"俄语书法/教育用品","keyword_ru":"набор для каллиграфии","keyword_en":"calligraphy set","tags":["政策红利","新需求","轻小件"],"total_score":7,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":28.9,"dimensions":{"search_volume":1,"avg_reviews":2,"seller_count":2,"ozon_self":1,"price_concentration":1,"rating_variance":1,"rFBS_fitness":1},"metrics":{"total_search_results":75,"avg_price":990,"avg_reviews":18,"avg_rating":4.5,"unique_sellers":3,"ozon_self_ratio":0,"price_concentration":0.38,"low_rating_ratio":0.25,"top10_avg_reviews":12,"top10_avg_rating":4.3,"top10_seller_count":3,"top10_ozon_self_count":0,"price_min":450,"price_max":1800}},
+    {"category":"家居收纳-冰箱收纳","keyword_ru":"органайзер для холодильника","keyword_en":"fridge organizer","tags":["刚需","全年品","轻小件"],"total_score":7,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":35.2,"dimensions":{"search_volume":2,"avg_reviews":1,"seller_count":2,"ozon_self":1,"price_concentration":1,"rating_variance":0,"rFBS_fitness":1},"metrics":{"total_search_results":380,"avg_price":420,"avg_reviews":220,"avg_rating":4.6,"unique_sellers":10,"ozon_self_ratio":0.08,"price_concentration":0.28,"low_rating_ratio":0.1,"top10_avg_reviews":180,"top10_avg_rating":4.5,"top10_seller_count":8,"top10_ozon_self_count":1,"price_min":150,"price_max":800}},
+    {"category":"厨房工具-调料瓶","keyword_ru":"контейнеры для специй","keyword_en":"spice containers","tags":["刚需","全年品","轻小件"],"total_score":7,"recommendation":"🔥 强烈推荐入场","blue_ocean_index":30.1,"dimensions":{"search_volume":1,"avg_reviews":1,"seller_count":2,"ozon_self":1,"price_concentration":1,"rating_variance":0.5,"rFBS_fitness":1},"metrics":{"total_search_results":180,"avg_price":380,"avg_reviews":150,"avg_rating":4.5,"unique_sellers":6,"ozon_self_ratio":0.05,"price_concentration":0.32,"low_rating_ratio":0.12,"top10_avg_reviews":120,"top10_avg_rating":4.4,"top10_seller_count":5,"top10_ozon_self_count":0,"price_min":180,"price_max":950}},
+    {"category":"3C配件-手机壳（红海对照）","keyword_ru":"чехол для телефона","keyword_en":"phone case","tags":["红海对照","超饱和","不入场"],"total_score":2,"recommendation":"❌ 建议放弃","blue_ocean_index":3.2,"dimensions":{"search_volume":2,"avg_reviews":0,"seller_count":0,"ozon_self":0,"price_concentration":0,"rating_variance":0,"rFBS_fitness":0},"metrics":{"total_search_results":12000,"avg_price":290,"avg_reviews":1500,"avg_rating":4.3,"unique_sellers":85,"ozon_self_ratio":0.2,"price_concentration":0.08,"low_rating_ratio":0.1,"top10_avg_reviews":1200,"top10_avg_rating":4.5,"top10_seller_count":25,"top10_ozon_self_count":4,"price_min":80,"price_max":1500}},
+    {"category":"宠物保暖衣（红海对照）","keyword_ru":"зимняя одежда для собак","keyword_en":"winter dog clothes","tags":["红海对照","退货率高","不入场"],"total_score":3,"recommendation":"❌ 建议放弃","blue_ocean_index":5.8,"dimensions":{"search_volume":2,"avg_reviews":0,"seller_count":0,"ozon_self":0,"price_concentration":0,"rating_variance":1,"rFBS_fitness":0},"metrics":{"total_search_results":5000,"avg_price":450,"avg_reviews":800,"avg_rating":3.8,"unique_sellers":45,"ozon_self_ratio":0.18,"price_concentration":0.1,"low_rating_ratio":0.3,"top10_avg_reviews":600,"top10_avg_rating":3.9,"top10_seller_count":20,"top10_ozon_self_count":3,"price_min":200,"price_max":2800}}
+  ],"alerts":[{"type":"🟢 新蓝海发现","category":"俄语书法/教育用品","message":"蓝海评分7分，政策红利驱动","priority":"high"}],"summary":{"total_categories":16,"strong_recommend":8,"conditional":6,"avoid":2,"avg_score":6.3}};
+
+// 加载监控数据的remote URL
+const DATA_URLS = {
+  monitor: 'dashboard/data.json',
+  picks: 'daily-picks/latest-picks.json'
+};
+
+// ============================================================
+// Tab切换
+// ============================================================
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+      if(btn.dataset.tab==='picks') loadPicksData();
+      if(btn.dataset.tab==='sourcing') loadSourcingData();
+    });
+  });
+  loadMonitorData();
+});
+
+// ============================================================
+// 工具函数
+// ============================================================
+function build1688Url(keyword, fallbackUrl){
+  // 优先使用Python预生成的GBK编码URL（s.1688.com要求GBK编码，JS的encodeURIComponent是UTF-8会乱码）
+  if(fallbackUrl && fallbackUrl !== '#') return fallbackUrl;
+  if(!keyword) return '#';
+  // 兜底：使用encodeURIComponent编码（可能乱码但至少能跳转）
+  return 'https://s.1688.com/selloffer/offer_search.htm?keywords='+encodeURIComponent(keyword)+'&n=y';
+}
+function buildPddUrl(keyword){
+  if(!keyword) return '#';
+  return 'https://mobile.yangkeduo.com/search_result.html?search_key='+encodeURIComponent(keyword);
+}
+
+// ============================================================
+// 监控数据加载
+// ============================================================
+function loadMonitorData(){
+  fetch(DATA_URLS.monitor)
+    .then(r=>r.ok?r.json():Promise.reject('nofile'))
+    .then(data=>{
+      currentMonitorData = data;
+      document.getElementById('data-badge').className='badge badge-live';
+      document.getElementById('data-badge').textContent='LIVE';
+      renderMonitor(data);
+    })
+    .catch(()=>{
+      currentMonitorData = DEMO_DATA;
+      document.getElementById('data-badge').className='badge badge-demo';
+      document.getElementById('data-badge').textContent='DEMO';
+      renderMonitor(DEMO_DATA);
+    });
+}
+
+function renderMonitor(data){
+  const ts = data.timestamp||data.date||'-';
+  document.getElementById('update-time').textContent = '更新: '+ts;
+  const s = data.summary||{};
+  document.getElementById('stat-strong').textContent = s.strong_recommend||'-';
+  document.getElementById('stat-conditional').textContent = s.conditional||'-';
+  document.getElementById('stat-avoid').textContent = s.avoid||'-';
+  document.getElementById('stat-avg').textContent = s.avg_score||'-';
+  renderAlerts(data.alerts||[]);
+  renderRanking(data.ranking||[]);
+  renderScoreChart(data.ranking||[]);
+  renderPriceChart(data.ranking||[]);
+  renderCompetitionChart(data.ranking||[]);
+}
+
+function renderAlerts(alerts){
+  const bar = document.getElementById('alerts-bar');
+  if(!alerts.length){bar.innerHTML='';return;}
+  bar.innerHTML = alerts.map(a=>`
+    <div class="alert-item alert-${a.priority==='high'?'high':a.priority==='medium'?'medium':'low'}">
+      <span style="font-size:16px">${a.type}</span><span>${a.message}</span>
+    </div>`).join('');
+}
+
+function renderRanking(ranking){
+  const list = document.getElementById('ranking-list');
+  list.innerHTML = ranking.map((r,i)=>{
+    const rc = i===0?'rank-1':i===1?'rank-2':i===2?'rank-3':'rank-default';
+    const fc = r.total_score>=7?'fill-high':r.total_score>=5?'fill-medium':'fill-low';
+    const sc = r.total_score>=7?'#ef4444':r.total_score>=5?'#3b82f6':'#64748b';
+    const tags = (r.tags||[]).map(t=>{
+      const cls = t.includes('蓝海')?'tag-b':t.includes('红海')?'tag-r':t.includes('旺季')||t.includes('季节')?'tag-s':t.includes('轻小')?'tag-g':t.includes('政策')?'tag-y':'tag-p';
+      return `<span class="tag ${cls}">${t}</span>`;
+    }).join('');
+    return `<li class="ranking-item" onclick="selectCategory(${i})" data-idx="${i}">
+      <span class="rank ${rc}">${i+1}</span>
+      <div class="info"><div class="cat-name">${r.category}</div><div class="cat-tags">${tags}</div></div>
+      <div class="score-area"><div class="bar"><div class="fill ${fc}" style="width:${r.total_score*10}%"></div></div><span class="num" style="color:${sc}">${r.total_score}</span></div></li>`;
+  }).join('');
+}
+
+function selectCategory(idx){
+  document.querySelectorAll('.ranking-item').forEach(el=>el.classList.remove('selected'));
+  const item = document.querySelector(`.ranking-item[data-idx="${idx}"]`);
+  if(item) item.classList.add('selected');
+  selectedCategory = currentMonitorData.ranking[idx];
+  renderDetail(selectedCategory);
+  // 滚动到详情面板
+  const panel = document.getElementById('detail-panel');
+  if(panel){
+    setTimeout(()=>panel.scrollIntoView({behavior:'smooth',block:'start'}),100);
+  }
+}
+
+function renderDetail(cat){
+  const panel = document.getElementById('detail-panel');
+  panel.classList.add('show');
+  document.getElementById('detail-title').textContent = cat.category+' — 详细分析';
+  const m = cat.metrics;
+  const mi = cat.market_intel||{};
+  // 基础指标
+  document.getElementById('detail-grid').innerHTML = `
+    <div class="detail-metric"><div class="dm-label">蓝海指数</div><div class="dm-value" style="color:var(--accent-cyan)">${cat.blue_ocean_index}</div><div class="dm-unit">需求/竞争比</div></div>
+    <div class="detail-metric"><div class="dm-label">平均售价</div><div class="dm-value">${m.avg_price||0}<span class="dm-unit">₽</span></div><div class="dm-unit">¥${((m.avg_price||0)*0.08).toFixed(0)}</div></div>
+    <div class="detail-metric"><div class="dm-label">TOP10平均评论</div><div class="dm-value">${m.top10_avg_reviews||0}</div><div class="dm-unit">条</div></div>
+    <div class="detail-metric"><div class="dm-label">TOP10卖家数</div><div class="dm-value">${m.top10_seller_count||0}</div><div class="dm-unit">家</div></div>
+    <div class="detail-metric"><div class="dm-label">自营占比</div><div class="dm-value">${((m.ozon_self_ratio||0)*100).toFixed(1)}<span class="dm-unit">%</span></div><div class="dm-unit">${m.top10_ozon_self_count||0}个自营</div></div>
+    <div class="detail-metric"><div class="dm-label">价格集中度</div><div class="dm-value">${(m.price_concentration||0).toFixed(2)}</div><div class="dm-unit">越高=差异化空间大</div></div>
+    <div class="detail-metric"><div class="dm-label">低评分占比</div><div class="dm-value">${((m.low_rating_ratio||0)*100).toFixed(1)}<span class="dm-unit">%</span></div><div class="dm-unit">痛点=机会</div></div>
+    <div class="detail-metric"><div class="dm-label">搜索结果数</div><div class="dm-value">${m.total_search_results||0}</div><div class="dm-unit">个商品</div></div>`;
+  // 如果有市场情报数据，追加到指标网格
+  if(Object.keys(mi).length>0){
+    const intelHtml = `
+      <div class="detail-metric" style="grid-column:1/-1;background:rgba(6,182,212,.06);border-radius:8px;padding:12px">
+        <div style="font-size:12px;color:var(--accent-cyan);font-weight:700;margin-bottom:8px">📡 市场情报（数据来源验证）</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;font-size:12px">
+          ${mi.competition_level?`<div><span style="color:var(--text-muted)">竞争等级：</span><strong style="color:${mi.competition_level==='low'||mi.competition_level==='mid_low'?'var(--accent-green)':mi.competition_level==='extreme'?'var(--accent-red)':'var(--accent-yellow)'}">${mi.competition_level}</strong></div>`:''}
+          ${mi.sales_growth?`<div><span style="color:var(--text-muted)">销量增速：</span><strong style="color:var(--accent-green)">${mi.sales_growth}</strong></div>`:''}
+          ${mi.season?`<div><span style="color:var(--text-muted)">季节性：</span><strong>${mi.season}</strong></div>`:''}
+          ${mi.commission?`<div><span style="color:var(--text-muted)">佣金：</span><strong>${mi.commission}</strong></div>`:''}
+          ${mi.logistics_type?`<div><span style="color:var(--text-muted)">物流：</span><strong>${mi.logistics_type}</strong></div>`:''}
+          ${mi.ozon_self_risk?`<div><span style="color:var(--text-muted)">自营风险：</span><strong>${mi.ozon_self_risk}</strong></div>`:''}
+        </div>
+        ${(mi.sources&&mi.sources.length)?`<div style="margin-top:8px;font-size:11px;color:var(--text-muted)">📎 数据来源：${mi.sources.join('、')}</div>`:''}
+      </div>`;
+    document.getElementById('detail-grid').innerHTML += intelHtml;
+  }
+  const dims = cat.dimensions||{};
+  const labels = {
+    search_volume:{n:'搜索需求量',cr:'≥100=2,30-100=1,<30=0'},
+    avg_reviews:{n:'TOP10评论数',cr:'<200=2,200-500=1,>500=0'},
+    seller_count:{n:'TOP10卖家数',cr:'<10=2,10-20=1,>20=0'},
+    ozon_self:{n:'自营占比',cr:'<10%=1,10-30%=0.5,>30%=0'},
+    price_concentration:{n:'价格集中度',cr:'>0.4=2,0.2-0.4=1,<0.2=0'},
+    rating_variance:{n:'低评分占比',cr:'>20%=1,10-20%=0.5,<10%=0'},
+    rFBS_fitness:{n:'物流适配度',cr:'轻小=1,中等=0.5,大件/EAC=0'}
+  };
+  const details = {
+    search_volume:`搜索结果${m.total_search_results||0}个`,
+    avg_reviews:`TOP10平均${m.top10_avg_reviews||0}条`,
+    seller_count:`TOP10有${m.top10_seller_count||0}家`,
+    ozon_self:`自营${((m.ozon_self_ratio||0)*100).toFixed(1)}%`,
+    price_concentration:`集中度${(m.price_concentration||0).toFixed(2)}`,
+    rating_variance:`差评${((m.low_rating_ratio||0)*100).toFixed(1)}%`,
+    rFBS_fitness:`标签:${(cat.tags||[]).join(', ')}`
+  };
+  document.getElementById('dimension-tbody').innerHTML = Object.keys(labels).map(k=>{
+    const s = dims[k]||0;
+    const cls = s>=2?'dim-2':s>=1?'dim-1':s>=0.5?'dim-05':'dim-0';
+    return `<tr><td><strong>${labels[k].n}</strong></td><td><span class="dim-score ${cls}">${s}</span></td><td>${details[k]||'-'}</td><td style="color:var(--text-muted);font-size:12px">${labels[k].cr}</td></tr>`;
+  }).join('');
+
+  // Ozon快速链接
+  const kw = encodeURIComponent(cat.keyword_ru||'');
+  const links = document.getElementById('detail-links');
+  links.innerHTML = kw ? `
+    <a href="https://www.ozon.ru/search/?text=${kw}&sorting=rating" target="_blank" class="btn-link btn-ozon">🔍 在Ozon搜索「${cat.keyword_ru}」</a>
+    <span style="font-size:12px;color:var(--text-muted);margin-left:8px;align-self:center">点击链接直达Ozon搜索页，查看实时竞品</span>
+  ` : '';
+}
+
+// ============================================================
+// 图表 (同原版)
+// ============================================================
+function renderScoreChart(ranking){
+  const ctx = document.getElementById('score-chart').getContext('2d');
+  if(scoreChart)scoreChart.destroy();
+  const labels = ranking.map(r=>r.category.length>10?r.category.substring(0,10)+'..':r.category);
+  const scores = ranking.map(r=>r.total_score);
+  const colors = scores.map(s=>s>=7?'#ef4444':s>=5?'#3b82f6':'#64748b');
+  scoreChart = new Chart(ctx,{type:'bar',data:{labels,datasets:[{label:'蓝海评分',data:scores,backgroundColor:colors.map(c=>c+'40'),borderColor:colors,borderWidth:2,borderRadius:4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,max:10,grid:{color:'#334155'},ticks:{color:'#94a3b8'}},x:{grid:{display:false},ticks:{color:'#94a3b8',maxRotation:45}}}}});
+}
+function renderPriceChart(ranking){
+  const ctx = document.getElementById('price-chart').getContext('2d');
+  if(priceChart)priceChart.destroy();
+  const blue = ranking.filter(r=>r.total_score>=5);
+  const labels = ['≤300₽','300-500₽','500-1000₽','1000-1500₽','≥1500₽'];
+  const ds = blue.slice(0,6).map((r,i)=>{
+    const d = r.metrics?.price_distribution||{};
+    return {label:r.category.length>12?r.category.substring(0,12)+'..':r.category,data:labels.map(l=>(d[l]?.ratio||0)*100),backgroundColor:`hsla(${[200,160,280,30,340,120][i]},70%,60%,0.3)`,borderColor:`hsla(${[200,160,280,30,340,120][i]},70%,60%,1)`,borderWidth:2};
+  });
+  priceChart = new Chart(ctx,{type:'bar',data:{labels,datasets:ds},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:12,font:{size:11}}}},scales:{y:{beginAtZero:true,grid:{color:'#334155'},ticks:{color:'#94a3b8',callback:v=>v+'%'}},x:{grid:{display:false},ticks:{color:'#94a3b8'}}}}});
+}
+function renderCompetitionChart(ranking){
+  const ctx = document.getElementById('competition-chart').getContext('2d');
+  if(competitionChart)competitionChart.destroy();
+  const blue = ranking.filter(r=>r.total_score>=5).slice(0,8);
+  competitionChart = new Chart(ctx,{type:'radar',data:{labels:['蓝海指数','评论少','卖家少','自营低','价格散','差评多'],datasets:blue.map((r,i)=>{const m=r.metrics;return{label:r.category.length>10?r.category.substring(0,10)+'..':r.category,data:[Math.min((r.blue_ocean_index||0)/60*10,10),Math.max(10-(m.top10_avg_reviews||0)/200*10,0),Math.max(10-(m.top10_seller_count||0)/20*10,0),Math.max(10-(m.ozon_self_ratio||0)*100/30*10,0),Math.min((m.price_concentration||0)/0.6*10,10),Math.min((m.low_rating_ratio||0)*100/30*10,10)],backgroundColor:`hsla(${[200,160,280,30,340,120,60,100][i]},70%,60%,0.15)`,borderColor:`hsla(${[200,160,280,30,340,120,60,100][i]},70%,60%,0.8)`,borderWidth:2,pointRadius:3,pointBackgroundColor:`hsla(${[200,160,280,30,340,120,60,100][i]},70%,60%,1)`}})},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{color:'#94a3b8',boxWidth:10,font:{size:10}}}},scales:{r:{beginAtZero:true,max:10,grid:{color:'#334155'},angleLines:{color:'#334155'},pointLabels:{color:'#94a3b8',font:{size:11}},ticks:{display:false}}}}});
+}
+
+// ============================================================
+// Tab 2: 选品日报
+// ============================================================
+function loadPicksData(){
+  fetch(DATA_URLS.picks)
+    .then(r=>r.ok?r.json():Promise.reject('no data'))
+    .then(data=>{
+      currentPicksData = data;
+      renderPicks(data);
+    })
+    .catch(()=>{
+      document.getElementById('picks-loader').innerHTML = '<div class="empty-state"><div class="icon">📭</div><div>暂无选品日报数据</div><div style="font-size:13px;margin-top:8px">请先运行选品调研任务生成 daily-picks/latest-picks.json</div></div>';
+    });
+}
+
+function renderPicks(data){
+  document.getElementById('picks-loader').style.display='none';
+  document.getElementById('picks-context').style.display='block';
+
+  // 市场概览
+  const ctx = data.market_context||{};
+  document.getElementById('context-bar').innerHTML = `
+    <div class="context-card ctx-blue"><div class="c-label">Ozon大盘</div><div class="c-value">${ctx.ozon_overview||'-'}</div></div>
+    <div class="context-card ctx-green"><div class="c-label">当前季节</div><div class="c-value">${ctx.current_season||'-'}<br><span style="font-size:12px;color:var(--text-muted)">${ctx.next_season||''}</span></div></div>
+    <div class="context-card ctx-purple"><div class="c-label">数据来源</div><div class="c-value" style="font-size:13px">${data.data_source||'公开市场数据'}</div></div>`;
+
+  // 市场趋势
+  const trends = data.market_trends||[];
+  document.getElementById('trends-grid').innerHTML = trends.map(t=>`
+    <div class="trend-card">
+      <h3>${t.topic}</h3>
+      <div class="trend-source">📰 ${t.source}</div>
+      ${t.url?`<div class="trend-url"><a href="${t.url}" target="_blank">阅读原文 →</a></div>`:''}
+      ${(t.data_points||[]).map(dp=>`<div class="trend-item"><span class="ti-name">${dp.item}</span><span class="ti-data">${dp.growth}</span></div>`).join('')}
+      ${t.insight?`<div class="trend-insight">💡 ${t.insight}</div>`:''}
+    </div>`).join('');
+
+  // 选品推荐
+  const picks = data.picks||[];
+  document.getElementById('picks-grid').innerHTML = picks.map((p,i)=>{
+    const rc = i===0?'rank-1-bg':i===1?'rank-2-bg':i===2?'rank-3-bg':'rank-default';
+    const m = p.market_data||{};
+    const s = p.sourcing||{};
+    return `
+    <div class="pick-card">
+      <div class="pick-header">
+        <span class="rank-badge ${rc}">${p.rank}</span>
+        <div class="pick-info">
+          <div class="pick-title">${p.category}</div>
+          <div class="pick-sub">${p.sub_category||''} · 俄语搜索: <code style="background:rgba(6,182,212,.15);padding:1px 6px;border-radius:3px;font-size:12px;color:var(--accent-cyan)">${p.keyword_ru||''}</code></div>
+          <div class="pick-priority" style="color:${i<3?'var(--accent-green)':i<5?'var(--accent-blue)':'var(--accent-yellow)'}">${p.priority}</div>
+        </div>
+        <div class="pick-links">
+          <a href="${p.ozon_search_url||'#'}" target="_blank" class="btn-link btn-ozon">🔍 Ozon搜索</a>
+          ${p.ozon_competitor_url?`<a href="${p.ozon_competitor_url}" target="_blank" class="btn-link btn-ozon" style="background:rgba(139,92,246,.2);color:var(--accent-purple)">📊 竞品对比</a>`:''}
+        </div>
+      </div>
+      <div class="pick-body">
+        <div class="pick-section">
+          <h4>📊 市场数据</h4>
+          <div class="data-row"><span class="dt">销量增长</span><span class="dd" style="color:var(--accent-green)">${m.sales_growth||'-'}</span></div>
+          <div class="data-row"><span class="dt">季节</span><span class="dd">${m.season||'-'}</span></div>
+          <div class="data-row"><span class="dt">竞争程度</span><span class="dd">${m.competition_level||'-'}</span></div>
+          <div class="data-row"><span class="dt">佣金比例</span><span class="dd">${m.commission||'-'}</span></div>
+          <div class="data-row"><span class="dt">物流类型</span><span class="dd">${m.logistics_type||'-'}</span></div>
+        </div>
+        <div class="pick-section">
+          <h4>🔗 货源信息</h4>
+          <div class="data-row"><span class="dt">平台</span><span class="dd" style="color:var(--accent-cyan)">${s.platform||'-'}</span></div>
+          <div class="data-row"><span class="dt">采购价(CNY)</span><span class="dd" style="color:var(--accent-green)">${s.price_range_cny||'-'}</span></div>
+          <div class="data-row"><span class="dt">Ozon建议售价</span><span class="dd" style="color:var(--accent-orange)">${s.suggested_ozon_price||'-'}</span></div>
+          <div class="data-row"><span class="dt">利润预估</span><span class="dd" style="color:var(--accent-green)">${s.profit_estimate||'-'}</span></div>
+          <div class="data-row"><span class="dt">供应商</span><span class="dd">${s.suppliers_count||'-'}</span></div>
+          <div style="margin-top:10px">
+            <a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" class="btn-link btn-sourcing" style="width:100%;justify-content:center">🛒 ${s.platform||'1688'}搜索「${s.search_keyword||''}」</a>
+          </div>
+        </div>
+      </div>
+      <div class="pick-reason">
+        <strong>分析依据：</strong>${p.reasoning}
+        ${s.quality_tips?`<br><strong>选品建议：</strong>${s.quality_tips}`:''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // 红海警告
+  const red = data.red_ocean_warning||[];
+  if(red.length){
+    document.getElementById('red-ocean-list').innerHTML = red.map(r=>`
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:6px;background:rgba(239,68,68,.08);margin-bottom:6px">
+        <div><strong style="color:var(--accent-red)">❌ ${r.category}</strong> <span style="font-size:12px;color:var(--text-muted)">(${r.keyword_ru})</span></div>
+        <div style="font-size:12px;color:var(--text-secondary);text-align:right">${r.reason}</div>
+      </div>`).join('');
+    document.getElementById('red-ocean-panel').style.display='block';
+  }else{
+    document.getElementById('red-ocean-panel').style.display='none';
+  }
+
+  // 行动清单
+  const actions = data.action_items||[];
+  document.getElementById('action-list').innerHTML = actions.map(a=>`
+    <li><span class="a-check" onclick="this.classList.toggle('checked')"></span><span class="a-text">${a.action}</span><span class="a-tag ${a.priority==='high'?'tag-high':'tag-mid'}">${a.priority==='high'?'高优':'中优'}</span></li>`).join('');
+
+  // 事件提醒
+  const alerts = data.upcoming_alerts||[];
+  document.getElementById('upcoming-alerts').innerHTML = alerts.map(a=>`
+    <div style="display:flex;justify-content:space-between;padding:8px 0;font-size:13px;border-bottom:1px solid rgba(51,65,85,.3)">
+      <span style="color:var(--accent-purple);font-weight:600">📅 ${a.date}</span><span style="color:var(--text-secondary)">${a.event}</span>
+    </div>`).join('');
+}
+
+// ============================================================
+// Tab 3: 货源匹配
+// ============================================================
+function loadSourcingData(){
+  if(!currentPicksData){
+    fetch(DATA_URLS.picks)
+      .then(r=>r.ok?r.json():Promise.reject())
+      .then(data=>{currentPicksData=data;renderSourcing(data);})
+      .catch(()=>{
+        document.getElementById('sourcing-loader').innerHTML='<div class="empty-state"><div class="icon">📭</div><div>请先加载选品日报数据</div><div style="font-size:13px;margin-top:8px">切换到「选品日报」Tab或运行选品调研</div></div>';
+      });
+    return;
+  }
+  renderSourcing(currentPicksData);
+}
+
+function renderSourcing(data){
+  document.getElementById('sourcing-loader').style.display='none';
+  document.getElementById('sourcing-content').style.display='block';
+
+  const picks = data.picks||[];
+  document.getElementById('sourcing-tbody').innerHTML = picks.map(p=>{
+    const s = p.sourcing||{};
+    const pc = (s.profit_estimate||'').includes('高')?'profit-high':'profit-mid';
+    return `<tr>
+      <td class="s-cat">${p.rank}. ${p.category}</td>
+      <td>${s.platform||'1688'}</td>
+      <td><a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" style="color:var(--accent-blue);text-decoration:none">${s.search_keyword||'-'}</a></td>
+      <td class="s-price">${s.price_range_cny||'-'}</td>
+      <td style="white-space:nowrap">${s.suggested_ozon_price||'-'}<br><span style="font-size:11px;color:var(--text-muted)">(${s.suggested_ozon_price_cny||'-'})</span></td>
+      <td class="s-profit ${pc}">${s.profit_estimate||'-'}</td>
+      <td style="font-size:12px;color:var(--text-secondary)">${s.suppliers_count||'-'}</td>
+      <td>
+        <a href="${build1688Url(s.search_keyword, s.search_url)}" target="_blank" class="btn-link btn-sourcing" style="font-size:11px;padding:5px 10px">去搜索</a>
+        ${s.backup_platform?`<br><a href="${s.backup_platform==='拼多多'?buildPddUrl(s.search_keyword):build1688Url(s.search_keyword, s.backup_search_url)}" target="_blank" style="font-size:10px;color:var(--text-muted);text-decoration:none;margin-top:4px;display:inline-block">备选: ${s.backup_platform}</a>`:''}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// 回到顶部按钮控制
+window.addEventListener('scroll',function(){
+  document.getElementById('backToTop').classList.toggle('visible',window.scrollY>400);
+});
+</script>
+<button class="back-to-top" id="backToTop" title="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
+</body>
+</html>
