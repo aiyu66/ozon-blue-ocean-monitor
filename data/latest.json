@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-08-09T07:05:42.986158",
-  "date": "2026-08-09",
-  "time": "07:05:42",
+  "timestamp": "2026-08-10T07:53:31.568514",
+  "date": "2026-08-10",
+  "time": "07:53:31",
   "keywords_count": 40,
   "results": [
     {
@@ -14,44 +14,44 @@
         "轻小件",
         "高增长"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 452,
-      "scraped_products": 29,
-      "avg_price": 889,
-      "avg_reviews": 104,
-      "avg_rating": 4.49,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 664,
+      "scraped_products": 44,
+      "avg_price": 591,
+      "avg_reviews": 120,
+      "avg_rating": 4.74,
       "unique_sellers": 10,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0754,
-      "price_min": 139,
-      "price_max": 2915,
-      "price_std": 314.07,
-      "price_concentration": 0.4901,
-      "low_rating_ratio": 0.2517,
-      "top10_avg_reviews": 85,
-      "top10_avg_rating": 4.33,
+      "ozon_self_ratio": 0.0188,
+      "price_min": 110,
+      "price_max": 1987,
+      "price_std": 248.99,
+      "price_concentration": 0.5892,
+      "low_rating_ratio": 0.2854,
+      "top10_avg_reviews": 79,
+      "top10_avg_rating": 4.7,
       "top10_ozon_self_count": 2,
-      "top10_seller_count": 10,
+      "top10_seller_count": 6,
       "price_distribution": {
         "≤300₽": {
-          "count": 3,
-          "ratio": 0.1494
+          "count": 2,
+          "ratio": 0.1134
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.127
+          "count": 12,
+          "ratio": 0.1797
         },
         "500-1000₽": {
-          "count": 12,
-          "ratio": 0.3013
+          "count": 20,
+          "ratio": 0.2383
         },
         "1000-1500₽": {
           "count": 4,
-          "ratio": 0.0902
+          "ratio": 0.1764
         },
         "≥1500₽": {
           "count": 8,
-          "ratio": 0.0759
+          "ratio": 0.0909
         }
       },
       "products": []
@@ -66,44 +66,44 @@
         "轻小件",
         "高增长"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 392,
-      "scraped_products": 68,
-      "avg_price": 522,
-      "avg_reviews": 112,
-      "avg_rating": 4.39,
-      "unique_sellers": 7,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 519,
+      "scraped_products": 79,
+      "avg_price": 771,
+      "avg_reviews": 132,
+      "avg_rating": 4.55,
+      "unique_sellers": 9,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0692,
-      "price_min": 220,
-      "price_max": 2738,
-      "price_std": 282.74,
-      "price_concentration": 0.5397,
-      "low_rating_ratio": 0.2131,
-      "top10_avg_reviews": 77,
-      "top10_avg_rating": 4.38,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 4,
+      "ozon_self_ratio": 0.0246,
+      "price_min": 104,
+      "price_max": 2649,
+      "price_std": 136.94,
+      "price_concentration": 0.4412,
+      "low_rating_ratio": 0.226,
+      "top10_avg_reviews": 57,
+      "top10_avg_rating": 4.54,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 8,
       "price_distribution": {
         "≤300₽": {
-          "count": 4,
-          "ratio": 0.0853
+          "count": 9,
+          "ratio": 0.1263
         },
         "300-500₽": {
-          "count": 5,
-          "ratio": 0.1433
+          "count": 9,
+          "ratio": 0.1145
         },
         "500-1000₽": {
-          "count": 13,
-          "ratio": 0.2247
+          "count": 9,
+          "ratio": 0.2163
         },
         "1000-1500₽": {
-          "count": 4,
-          "ratio": 0.1509
+          "count": 6,
+          "ratio": 0.0579
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.077
+          "count": 2,
+          "ratio": 0.1291
         }
       },
       "products": []
@@ -118,44 +118,44 @@
         "轻小件",
         "智能宠物增217%"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 513,
-      "scraped_products": 40,
-      "avg_price": 898,
-      "avg_reviews": 42,
-      "avg_rating": 4.52,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 160,
+      "scraped_products": 50,
+      "avg_price": 322,
+      "avg_reviews": 116,
+      "avg_rating": 4.69,
       "unique_sellers": 12,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0608,
-      "price_min": 205,
-      "price_max": 2927,
-      "price_std": 217.26,
-      "price_concentration": 0.5783,
-      "low_rating_ratio": 0.1728,
-      "top10_avg_reviews": 73,
-      "top10_avg_rating": 4.49,
-      "top10_ozon_self_count": 0,
-      "top10_seller_count": 10,
+      "ozon_self_ratio": 0.0086,
+      "price_min": 206,
+      "price_max": 2496,
+      "price_std": 210.7,
+      "price_concentration": 0.491,
+      "low_rating_ratio": 0.1661,
+      "top10_avg_reviews": 13,
+      "top10_avg_rating": 4.51,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 9,
       "price_distribution": {
         "≤300₽": {
           "count": 6,
-          "ratio": 0.1429
+          "ratio": 0.1449
         },
         "300-500₽": {
           "count": 5,
-          "ratio": 0.1395
+          "ratio": 0.1023
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.207
+          "count": 10,
+          "ratio": 0.216
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.1056
+          "count": 10,
+          "ratio": 0.132
         },
         "≥1500₽": {
-          "count": 2,
-          "ratio": 0.0894
+          "count": 4,
+          "ratio": 0.0701
         }
       },
       "products": []
@@ -170,44 +170,44 @@
         "轻小件",
         "低退货"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 588,
-      "scraped_products": 71,
-      "avg_price": 976,
-      "avg_reviews": 130,
-      "avg_rating": 4.64,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 251,
+      "scraped_products": 87,
+      "avg_price": 480,
+      "avg_reviews": 102,
+      "avg_rating": 4.31,
+      "unique_sellers": 13,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0159,
-      "price_min": 184,
-      "price_max": 2526,
-      "price_std": 134.51,
-      "price_concentration": 0.5551,
-      "low_rating_ratio": 0.251,
-      "top10_avg_reviews": 79,
-      "top10_avg_rating": 4.52,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 9,
+      "ozon_self_ratio": 0.037,
+      "price_min": 146,
+      "price_max": 1935,
+      "price_std": 330.89,
+      "price_concentration": 0.461,
+      "low_rating_ratio": 0.2898,
+      "top10_avg_reviews": 77,
+      "top10_avg_rating": 4.22,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 10,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0554
+          "count": 8,
+          "ratio": 0.0859
         },
         "300-500₽": {
-          "count": 7,
-          "ratio": 0.1063
+          "count": 9,
+          "ratio": 0.1922
         },
         "500-1000₽": {
-          "count": 18,
-          "ratio": 0.3497
+          "count": 14,
+          "ratio": 0.2247
         },
         "1000-1500₽": {
-          "count": 6,
-          "ratio": 0.1303
+          "count": 10,
+          "ratio": 0.159
         },
         "≥1500₽": {
-          "count": 4,
-          "ratio": 0.089
+          "count": 8,
+          "ratio": 0.1022
         }
       },
       "products": []
@@ -222,44 +222,44 @@
         "轻小件",
         "低退货"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 485,
-      "scraped_products": 23,
-      "avg_price": 650,
-      "avg_reviews": 34,
-      "avg_rating": 4.78,
-      "unique_sellers": 14,
-      "ozon_self_count": 1,
-      "ozon_self_ratio": 0.0746,
-      "price_min": 174,
-      "price_max": 2514,
-      "price_std": 404.18,
-      "price_concentration": 0.3949,
-      "low_rating_ratio": 0.2896,
-      "top10_avg_reviews": 42,
-      "top10_avg_rating": 4.69,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 555,
+      "scraped_products": 97,
+      "avg_price": 490,
+      "avg_reviews": 68,
+      "avg_rating": 4.42,
+      "unique_sellers": 11,
+      "ozon_self_count": 0,
+      "ozon_self_ratio": 0.0344,
+      "price_min": 180,
+      "price_max": 1724,
+      "price_std": 216.84,
+      "price_concentration": 0.5419,
+      "low_rating_ratio": 0.179,
+      "top10_avg_reviews": 27,
+      "top10_avg_rating": 4.33,
       "top10_ozon_self_count": 2,
-      "top10_seller_count": 7,
+      "top10_seller_count": 3,
       "price_distribution": {
         "≤300₽": {
-          "count": 6,
-          "ratio": 0.1492
+          "count": 9,
+          "ratio": 0.0524
         },
         "300-500₽": {
-          "count": 13,
-          "ratio": 0.1834
+          "count": 6,
+          "ratio": 0.1519
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.3364
+          "count": 12,
+          "ratio": 0.2643
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.0946
+          "count": 7,
+          "ratio": 0.0658
         },
         "≥1500₽": {
-          "count": 4,
-          "ratio": 0.1497
+          "count": 2,
+          "ratio": 0.0992
         }
       },
       "products": []
@@ -274,44 +274,44 @@
         "轻小件",
         "换毛季高需求"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 469,
-      "scraped_products": 64,
-      "avg_price": 625,
-      "avg_reviews": 83,
-      "avg_rating": 4.72,
-      "unique_sellers": 11,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 116,
+      "scraped_products": 26,
+      "avg_price": 979,
+      "avg_reviews": 145,
+      "avg_rating": 4.35,
+      "unique_sellers": 15,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0024,
-      "price_min": 112,
-      "price_max": 2611,
-      "price_std": 267.35,
-      "price_concentration": 0.3673,
-      "low_rating_ratio": 0.184,
-      "top10_avg_reviews": 77,
-      "top10_avg_rating": 4.63,
+      "ozon_self_ratio": 0.0182,
+      "price_min": 228,
+      "price_max": 2553,
+      "price_std": 370.9,
+      "price_concentration": 0.3813,
+      "low_rating_ratio": 0.2839,
+      "top10_avg_reviews": 44,
+      "top10_avg_rating": 4.34,
       "top10_ozon_self_count": 2,
-      "top10_seller_count": 6,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 8,
-          "ratio": 0.0877
+          "count": 5,
+          "ratio": 0.0711
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.1977
+          "count": 13,
+          "ratio": 0.2349
         },
         "500-1000₽": {
-          "count": 12,
-          "ratio": 0.3317
+          "count": 11,
+          "ratio": 0.2996
         },
         "1000-1500₽": {
-          "count": 10,
-          "ratio": 0.1877
+          "count": 5,
+          "ratio": 0.072
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.0643
+          "count": 7,
+          "ratio": 0.1096
         }
       },
       "products": []
@@ -326,44 +326,44 @@
         "轻小件",
         "高复购"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 587,
-      "scraped_products": 20,
-      "avg_price": 464,
-      "avg_reviews": 67,
-      "avg_rating": 4.68,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 502,
+      "scraped_products": 21,
+      "avg_price": 417,
+      "avg_reviews": 146,
+      "avg_rating": 4.34,
+      "unique_sellers": 13,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0235,
-      "price_min": 135,
-      "price_max": 1556,
-      "price_std": 204.86,
-      "price_concentration": 0.3897,
-      "low_rating_ratio": 0.217,
-      "top10_avg_reviews": 87,
-      "top10_avg_rating": 4.6,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 10,
+      "ozon_self_ratio": 0.0338,
+      "price_min": 240,
+      "price_max": 1629,
+      "price_std": 295.3,
+      "price_concentration": 0.42,
+      "low_rating_ratio": 0.2387,
+      "top10_avg_reviews": 28,
+      "top10_avg_rating": 4.33,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 7,
       "price_distribution": {
         "≤300₽": {
           "count": 4,
-          "ratio": 0.0993
+          "ratio": 0.0616
         },
         "300-500₽": {
           "count": 15,
-          "ratio": 0.2406
+          "ratio": 0.1451
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.2692
+          "count": 15,
+          "ratio": 0.2809
         },
         "1000-1500₽": {
-          "count": 10,
-          "ratio": 0.1962
+          "count": 9,
+          "ratio": 0.1233
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.1266
+          "count": 2,
+          "ratio": 0.0941
         }
       },
       "products": []
@@ -378,44 +378,44 @@
         "轻小件",
         "高复购"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 749,
-      "scraped_products": 94,
-      "avg_price": 385,
-      "avg_reviews": 48,
-      "avg_rating": 4.57,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 790,
+      "scraped_products": 30,
+      "avg_price": 766,
+      "avg_reviews": 76,
+      "avg_rating": 4.63,
+      "unique_sellers": 15,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0575,
-      "price_min": 139,
-      "price_max": 2085,
-      "price_std": 122.18,
-      "price_concentration": 0.5261,
-      "low_rating_ratio": 0.2357,
-      "top10_avg_reviews": 10,
-      "top10_avg_rating": 4.56,
+      "ozon_self_ratio": 0.0644,
+      "price_min": 144,
+      "price_max": 2093,
+      "price_std": 269.0,
+      "price_concentration": 0.4551,
+      "low_rating_ratio": 0.1941,
+      "top10_avg_reviews": 46,
+      "top10_avg_rating": 4.6,
       "top10_ozon_self_count": 1,
-      "top10_seller_count": 7,
+      "top10_seller_count": 9,
       "price_distribution": {
         "≤300₽": {
           "count": 3,
-          "ratio": 0.1138
+          "ratio": 0.1363
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.1968
+          "count": 5,
+          "ratio": 0.2316
         },
         "500-1000₽": {
-          "count": 14,
-          "ratio": 0.316
+          "count": 9,
+          "ratio": 0.2007
         },
         "1000-1500₽": {
           "count": 10,
-          "ratio": 0.1529
+          "ratio": 0.1891
         },
         "≥1500₽": {
-          "count": 8,
-          "ratio": 0.1304
+          "count": 4,
+          "ratio": 0.0994
         }
       },
       "products": []
@@ -430,44 +430,44 @@
         "中等体积",
         "高复购"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 419,
-      "scraped_products": 34,
-      "avg_price": 335,
-      "avg_reviews": 47,
-      "avg_rating": 4.35,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 181,
+      "scraped_products": 73,
+      "avg_price": 400,
+      "avg_reviews": 54,
+      "avg_rating": 4.62,
+      "unique_sellers": 10,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0491,
-      "price_min": 217,
-      "price_max": 2665,
-      "price_std": 273.4,
-      "price_concentration": 0.3737,
-      "low_rating_ratio": 0.1967,
-      "top10_avg_reviews": 16,
-      "top10_avg_rating": 4.28,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 6,
+      "ozon_self_ratio": 0.0589,
+      "price_min": 115,
+      "price_max": 1772,
+      "price_std": 466.85,
+      "price_concentration": 0.3739,
+      "low_rating_ratio": 0.1863,
+      "top10_avg_reviews": 97,
+      "top10_avg_rating": 4.54,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 9,
-          "ratio": 0.0953
+          "count": 2,
+          "ratio": 0.1294
         },
         "300-500₽": {
-          "count": 13,
-          "ratio": 0.1242
+          "count": 11,
+          "ratio": 0.1274
         },
         "500-1000₽": {
-          "count": 10,
-          "ratio": 0.231
+          "count": 11,
+          "ratio": 0.3187
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.0978
+          "count": 6,
+          "ratio": 0.1897
         },
         "≥1500₽": {
-          "count": 8,
-          "ratio": 0.1055
+          "count": 7,
+          "ratio": 0.0588
         }
       },
       "products": []
@@ -481,44 +481,44 @@
         "全年品",
         "轻小件"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 455,
-      "scraped_products": 24,
-      "avg_price": 408,
-      "avg_reviews": 128,
-      "avg_rating": 4.79,
-      "unique_sellers": 15,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 572,
+      "scraped_products": 34,
+      "avg_price": 303,
+      "avg_reviews": 19,
+      "avg_rating": 4.36,
+      "unique_sellers": 8,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0249,
-      "price_min": 108,
-      "price_max": 2173,
-      "price_std": 261.44,
-      "price_concentration": 0.5121,
-      "low_rating_ratio": 0.2644,
-      "top10_avg_reviews": 33,
-      "top10_avg_rating": 4.72,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 6,
+      "ozon_self_ratio": 0.0665,
+      "price_min": 227,
+      "price_max": 2459,
+      "price_std": 342.81,
+      "price_concentration": 0.4166,
+      "low_rating_ratio": 0.2458,
+      "top10_avg_reviews": 99,
+      "top10_avg_rating": 4.26,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 6,
-          "ratio": 0.1131
+          "count": 7,
+          "ratio": 0.0541
         },
         "300-500₽": {
-          "count": 11,
-          "ratio": 0.2422
+          "count": 5,
+          "ratio": 0.1468
         },
         "500-1000₽": {
-          "count": 11,
-          "ratio": 0.2958
+          "count": 12,
+          "ratio": 0.2895
         },
         "1000-1500₽": {
-          "count": 8,
-          "ratio": 0.0865
+          "count": 9,
+          "ratio": 0.1685
         },
         "≥1500₽": {
           "count": 3,
-          "ratio": 0.1145
+          "ratio": 0.1043
         }
       },
       "products": []
@@ -533,44 +533,44 @@
         "轻小件",
         "烧烤季热销"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 568,
-      "scraped_products": 29,
-      "avg_price": 474,
-      "avg_reviews": 73,
-      "avg_rating": 4.33,
-      "unique_sellers": 9,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 140,
+      "scraped_products": 59,
+      "avg_price": 609,
+      "avg_reviews": 30,
+      "avg_rating": 4.45,
+      "unique_sellers": 7,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0594,
-      "price_min": 179,
-      "price_max": 2780,
-      "price_std": 276.13,
-      "price_concentration": 0.4821,
-      "low_rating_ratio": 0.2018,
-      "top10_avg_reviews": 79,
-      "top10_avg_rating": 4.23,
+      "ozon_self_ratio": 0.0237,
+      "price_min": 177,
+      "price_max": 2152,
+      "price_std": 416.93,
+      "price_concentration": 0.5228,
+      "low_rating_ratio": 0.2499,
+      "top10_avg_reviews": 74,
+      "top10_avg_rating": 4.43,
       "top10_ozon_self_count": 0,
-      "top10_seller_count": 3,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0902
+          "count": 6,
+          "ratio": 0.0598
         },
         "300-500₽": {
-          "count": 12,
-          "ratio": 0.1808
+          "count": 8,
+          "ratio": 0.2345
         },
         "500-1000₽": {
-          "count": 10,
-          "ratio": 0.3187
+          "count": 16,
+          "ratio": 0.3482
         },
         "1000-1500₽": {
-          "count": 8,
-          "ratio": 0.0939
+          "count": 10,
+          "ratio": 0.0641
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.1042
+          "count": 2,
+          "ratio": 0.1174
         }
       },
       "products": []
@@ -585,44 +585,44 @@
         "轻小件",
         "痛点解决"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 627,
-      "scraped_products": 31,
-      "avg_price": 524,
-      "avg_reviews": 149,
-      "avg_rating": 4.62,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 187,
+      "scraped_products": 45,
+      "avg_price": 374,
+      "avg_reviews": 98,
+      "avg_rating": 4.5,
+      "unique_sellers": 13,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0528,
-      "price_min": 113,
-      "price_max": 2367,
-      "price_std": 154.06,
-      "price_concentration": 0.3584,
-      "low_rating_ratio": 0.2194,
-      "top10_avg_reviews": 83,
-      "top10_avg_rating": 4.55,
-      "top10_ozon_self_count": 0,
-      "top10_seller_count": 8,
+      "ozon_self_ratio": 0.0056,
+      "price_min": 207,
+      "price_max": 2587,
+      "price_std": 374.9,
+      "price_concentration": 0.4854,
+      "low_rating_ratio": 0.282,
+      "top10_avg_reviews": 46,
+      "top10_avg_rating": 4.44,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 10,
-          "ratio": 0.0789
+          "count": 4,
+          "ratio": 0.1062
         },
         "300-500₽": {
-          "count": 9,
-          "ratio": 0.1709
+          "count": 14,
+          "ratio": 0.1262
         },
         "500-1000₽": {
-          "count": 14,
-          "ratio": 0.3041
+          "count": 15,
+          "ratio": 0.3136
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.081
+          "count": 5,
+          "ratio": 0.1668
         },
         "≥1500₽": {
-          "count": 7,
-          "ratio": 0.0938
+          "count": 8,
+          "ratio": 0.1082
         }
       },
       "products": []
@@ -637,44 +637,44 @@
         "轻小件",
         "智能家居延伸"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 639,
-      "scraped_products": 44,
-      "avg_price": 629,
-      "avg_reviews": 30,
-      "avg_rating": 4.5,
-      "unique_sellers": 12,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 515,
+      "scraped_products": 50,
+      "avg_price": 771,
+      "avg_reviews": 113,
+      "avg_rating": 4.47,
+      "unique_sellers": 10,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0227,
-      "price_min": 228,
-      "price_max": 2465,
-      "price_std": 420.27,
-      "price_concentration": 0.4348,
-      "low_rating_ratio": 0.2701,
-      "top10_avg_reviews": 61,
-      "top10_avg_rating": 4.36,
+      "ozon_self_ratio": 0.0117,
+      "price_min": 117,
+      "price_max": 2482,
+      "price_std": 210.64,
+      "price_concentration": 0.4532,
+      "low_rating_ratio": 0.1632,
+      "top10_avg_reviews": 69,
+      "top10_avg_rating": 4.28,
       "top10_ozon_self_count": 2,
-      "top10_seller_count": 7,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 5,
-          "ratio": 0.0867
+          "count": 6,
+          "ratio": 0.0563
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.1083
+          "count": 13,
+          "ratio": 0.1191
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.3385
+          "count": 15,
+          "ratio": 0.32
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.1563
+          "count": 10,
+          "ratio": 0.1317
         },
         "≥1500₽": {
-          "count": 8,
-          "ratio": 0.1329
+          "count": 5,
+          "ratio": 0.0555
         }
       },
       "products": []
@@ -689,44 +689,44 @@
         "轻小件",
         "高增长"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 135,
-      "scraped_products": 88,
-      "avg_price": 2235,
-      "avg_reviews": 119,
-      "avg_rating": 4.57,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 260,
+      "scraped_products": 82,
+      "avg_price": 1882,
+      "avg_reviews": 67,
+      "avg_rating": 4.74,
+      "unique_sellers": 9,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0118,
-      "price_min": 374,
-      "price_max": 4576,
-      "price_std": 153.7,
-      "price_concentration": 0.4536,
-      "low_rating_ratio": 0.2285,
-      "top10_avg_reviews": 68,
-      "top10_avg_rating": 4.45,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 9,
+      "ozon_self_ratio": 0.0224,
+      "price_min": 463,
+      "price_max": 3911,
+      "price_std": 238.45,
+      "price_concentration": 0.4033,
+      "low_rating_ratio": 0.2184,
+      "top10_avg_reviews": 26,
+      "top10_avg_rating": 4.7,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 7,
-          "ratio": 0.1494
+          "count": 4,
+          "ratio": 0.0608
         },
         "300-500₽": {
-          "count": 12,
-          "ratio": 0.2457
+          "count": 8,
+          "ratio": 0.1986
         },
         "500-1000₽": {
-          "count": 16,
-          "ratio": 0.3219
+          "count": 9,
+          "ratio": 0.2054
         },
         "1000-1500₽": {
-          "count": 10,
-          "ratio": 0.0999
+          "count": 9,
+          "ratio": 0.0921
         },
         "≥1500₽": {
-          "count": 5,
-          "ratio": 0.1495
+          "count": 6,
+          "ratio": 0.1305
         }
       },
       "products": []
@@ -741,44 +741,44 @@
         "轻小件",
         "需提前备货"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 556,
-      "scraped_products": 70,
-      "avg_price": 1194,
-      "avg_reviews": 82,
-      "avg_rating": 4.79,
-      "unique_sellers": 12,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 417,
+      "scraped_products": 68,
+      "avg_price": 1370,
+      "avg_reviews": 79,
+      "avg_rating": 4.5,
+      "unique_sellers": 9,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.025,
-      "price_min": 403,
-      "price_max": 3667,
-      "price_std": 285.0,
-      "price_concentration": 0.4587,
-      "low_rating_ratio": 0.1892,
-      "top10_avg_reviews": 62,
-      "top10_avg_rating": 4.72,
-      "top10_ozon_self_count": 0,
-      "top10_seller_count": 7,
+      "ozon_self_ratio": 0.0217,
+      "price_min": 457,
+      "price_max": 3090,
+      "price_std": 185.95,
+      "price_concentration": 0.4899,
+      "low_rating_ratio": 0.1586,
+      "top10_avg_reviews": 50,
+      "top10_avg_rating": 4.5,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 8,
       "price_distribution": {
         "≤300₽": {
-          "count": 10,
-          "ratio": 0.1031
+          "count": 9,
+          "ratio": 0.0828
         },
         "300-500₽": {
-          "count": 11,
-          "ratio": 0.183
+          "count": 6,
+          "ratio": 0.1073
         },
         "500-1000₽": {
-          "count": 20,
-          "ratio": 0.3033
+          "count": 9,
+          "ratio": 0.3122
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.0981
+          "count": 8,
+          "ratio": 0.1881
         },
         "≥1500₽": {
-          "count": 7,
-          "ratio": 0.0777
+          "count": 5,
+          "ratio": 0.1047
         }
       },
       "products": []
@@ -793,44 +793,44 @@
         "轻小件",
         "高复购"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 710,
-      "scraped_products": 71,
-      "avg_price": 1318,
-      "avg_reviews": 79,
-      "avg_rating": 4.71,
-      "unique_sellers": 6,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 524,
+      "scraped_products": 30,
+      "avg_price": 830,
+      "avg_reviews": 50,
+      "avg_rating": 4.47,
+      "unique_sellers": 5,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0564,
-      "price_min": 385,
-      "price_max": 3591,
-      "price_std": 246.48,
-      "price_concentration": 0.598,
-      "low_rating_ratio": 0.2201,
-      "top10_avg_reviews": 46,
-      "top10_avg_rating": 4.66,
-      "top10_ozon_self_count": 2,
+      "ozon_self_ratio": 0.0378,
+      "price_min": 442,
+      "price_max": 4153,
+      "price_std": 454.83,
+      "price_concentration": 0.5545,
+      "low_rating_ratio": 0.2487,
+      "top10_avg_reviews": 72,
+      "top10_avg_rating": 4.28,
+      "top10_ozon_self_count": 0,
       "top10_seller_count": 9,
       "price_distribution": {
         "≤300₽": {
-          "count": 6,
-          "ratio": 0.1215
+          "count": 7,
+          "ratio": 0.1433
         },
         "300-500₽": {
-          "count": 11,
-          "ratio": 0.1929
+          "count": 9,
+          "ratio": 0.2432
         },
         "500-1000₽": {
-          "count": 12,
-          "ratio": 0.2488
+          "count": 14,
+          "ratio": 0.2391
         },
         "1000-1500₽": {
-          "count": 5,
-          "ratio": 0.1947
+          "count": 9,
+          "ratio": 0.0514
         },
         "≥1500₽": {
-          "count": 2,
-          "ratio": 0.1091
+          "count": 6,
+          "ratio": 0.089
         }
       },
       "products": []
@@ -845,44 +845,44 @@
         "中等体积",
         "高增长"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 395,
-      "scraped_products": 52,
-      "avg_price": 1771,
-      "avg_reviews": 97,
-      "avg_rating": 4.51,
-      "unique_sellers": 6,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 621,
+      "scraped_products": 76,
+      "avg_price": 1207,
+      "avg_reviews": 69,
+      "avg_rating": 4.44,
+      "unique_sellers": 14,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0353,
-      "price_min": 452,
-      "price_max": 4122,
-      "price_std": 470.67,
-      "price_concentration": 0.3595,
-      "low_rating_ratio": 0.2366,
+      "ozon_self_ratio": 0.0008,
+      "price_min": 425,
+      "price_max": 3971,
+      "price_std": 188.4,
+      "price_concentration": 0.5378,
+      "low_rating_ratio": 0.1708,
       "top10_avg_reviews": 23,
-      "top10_avg_rating": 4.48,
+      "top10_avg_rating": 4.35,
       "top10_ozon_self_count": 0,
-      "top10_seller_count": 9,
+      "top10_seller_count": 7,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.1439
+          "count": 3,
+          "ratio": 0.1463
         },
         "300-500₽": {
-          "count": 15,
-          "ratio": 0.2457
+          "count": 11,
+          "ratio": 0.2178
         },
         "500-1000₽": {
-          "count": 12,
-          "ratio": 0.2966
+          "count": 8,
+          "ratio": 0.2104
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.164
+          "count": 7,
+          "ratio": 0.1598
         },
         "≥1500₽": {
-          "count": 5,
-          "ratio": 0.0744
+          "count": 6,
+          "ratio": 0.0599
         }
       },
       "products": []
@@ -897,44 +897,44 @@
         "轻小件",
         "清凉经济"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 728,
-      "scraped_products": 37,
-      "avg_price": 2284,
-      "avg_reviews": 65,
-      "avg_rating": 4.47,
-      "unique_sellers": 6,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 743,
+      "scraped_products": 75,
+      "avg_price": 2177,
+      "avg_reviews": 115,
+      "avg_rating": 4.54,
+      "unique_sellers": 13,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0113,
-      "price_min": 467,
-      "price_max": 4578,
-      "price_std": 167.83,
-      "price_concentration": 0.3551,
-      "low_rating_ratio": 0.1966,
-      "top10_avg_reviews": 66,
-      "top10_avg_rating": 4.29,
-      "top10_ozon_self_count": 0,
-      "top10_seller_count": 6,
+      "ozon_self_ratio": 0.0498,
+      "price_min": 470,
+      "price_max": 4325,
+      "price_std": 407.35,
+      "price_concentration": 0.3563,
+      "low_rating_ratio": 0.2439,
+      "top10_avg_reviews": 90,
+      "top10_avg_rating": 4.4,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0606
+          "count": 4,
+          "ratio": 0.0568
         },
         "300-500₽": {
-          "count": 9,
-          "ratio": 0.133
+          "count": 15,
+          "ratio": 0.1062
         },
         "500-1000₽": {
-          "count": 17,
-          "ratio": 0.2777
+          "count": 8,
+          "ratio": 0.2355
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.168
+          "count": 9,
+          "ratio": 0.1932
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.1332
+          "count": 7,
+          "ratio": 0.1159
         }
       },
       "products": []
@@ -949,44 +949,44 @@
         "轻小件",
         "供给缺口>45%"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 505,
-      "scraped_products": 71,
-      "avg_price": 632,
-      "avg_reviews": 78,
-      "avg_rating": 4.5,
-      "unique_sellers": 10,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 239,
+      "scraped_products": 53,
+      "avg_price": 797,
+      "avg_reviews": 91,
+      "avg_rating": 4.41,
+      "unique_sellers": 14,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0075,
-      "price_min": 151,
-      "price_max": 1791,
-      "price_std": 245.98,
-      "price_concentration": 0.4221,
-      "low_rating_ratio": 0.2649,
-      "top10_avg_reviews": 32,
-      "top10_avg_rating": 4.32,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 3,
+      "ozon_self_ratio": 0.0504,
+      "price_min": 220,
+      "price_max": 2698,
+      "price_std": 240.2,
+      "price_concentration": 0.3863,
+      "low_rating_ratio": 0.2446,
+      "top10_avg_reviews": 96,
+      "top10_avg_rating": 4.37,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 5,
-          "ratio": 0.096
+          "count": 8,
+          "ratio": 0.0953
         },
         "300-500₽": {
-          "count": 15,
-          "ratio": 0.1036
+          "count": 11,
+          "ratio": 0.2195
         },
         "500-1000₽": {
           "count": 12,
-          "ratio": 0.3062
+          "ratio": 0.2602
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.0968
+          "count": 5,
+          "ratio": 0.1293
         },
         "≥1500₽": {
           "count": 2,
-          "ratio": 0.0961
+          "ratio": 0.0581
         }
       },
       "products": []
@@ -1001,44 +1001,44 @@
         "轻小件",
         "母婴安全需求"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 728,
-      "scraped_products": 82,
-      "avg_price": 994,
-      "avg_reviews": 132,
-      "avg_rating": 4.38,
-      "unique_sellers": 7,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 163,
+      "scraped_products": 92,
+      "avg_price": 386,
+      "avg_reviews": 54,
+      "avg_rating": 4.47,
+      "unique_sellers": 14,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0155,
-      "price_min": 144,
-      "price_max": 2497,
-      "price_std": 359.08,
-      "price_concentration": 0.5438,
-      "low_rating_ratio": 0.1903,
-      "top10_avg_reviews": 32,
-      "top10_avg_rating": 4.34,
-      "top10_ozon_self_count": 1,
+      "ozon_self_ratio": 0.0618,
+      "price_min": 202,
+      "price_max": 1787,
+      "price_std": 103.12,
+      "price_concentration": 0.4945,
+      "low_rating_ratio": 0.2353,
+      "top10_avg_reviews": 31,
+      "top10_avg_rating": 4.32,
+      "top10_ozon_self_count": 0,
       "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 7,
-          "ratio": 0.1164
+          "count": 8,
+          "ratio": 0.1453
         },
         "300-500₽": {
-          "count": 15,
-          "ratio": 0.2493
+          "count": 12,
+          "ratio": 0.1331
         },
         "500-1000₽": {
-          "count": 16,
-          "ratio": 0.2874
+          "count": 8,
+          "ratio": 0.2698
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.1057
+          "count": 8,
+          "ratio": 0.0825
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.1303
+          "count": 5,
+          "ratio": 0.1124
         }
       },
       "products": []
@@ -1053,44 +1053,44 @@
         "轻小件",
         "新兴品类"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 53,
-      "scraped_products": 47,
-      "avg_price": 747,
-      "avg_reviews": 54,
-      "avg_rating": 4.69,
-      "unique_sellers": 7,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 101,
+      "scraped_products": 99,
+      "avg_price": 727,
+      "avg_reviews": 42,
+      "avg_rating": 4.59,
+      "unique_sellers": 3,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0445,
-      "price_min": 115,
-      "price_max": 1702,
-      "price_std": 311.22,
-      "price_concentration": 0.357,
-      "low_rating_ratio": 0.1518,
-      "top10_avg_reviews": 25,
-      "top10_avg_rating": 4.59,
+      "ozon_self_ratio": 0.0376,
+      "price_min": 131,
+      "price_max": 2396,
+      "price_std": 203.92,
+      "price_concentration": 0.4148,
+      "low_rating_ratio": 0.1579,
+      "top10_avg_reviews": 12,
+      "top10_avg_rating": 4.56,
       "top10_ozon_self_count": 1,
-      "top10_seller_count": 5,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0527
+          "count": 8,
+          "ratio": 0.0992
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.2331
+          "count": 14,
+          "ratio": 0.1494
         },
         "500-1000₽": {
-          "count": 20,
-          "ratio": 0.2333
+          "count": 17,
+          "ratio": 0.2648
         },
         "1000-1500₽": {
-          "count": 10,
-          "ratio": 0.1104
+          "count": 9,
+          "ratio": 0.1354
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.1196
+          "count": 7,
+          "ratio": 0.0743
         }
       },
       "products": []
@@ -1105,44 +1105,44 @@
         "轻小件",
         "达恰刚需"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 720,
-      "scraped_products": 85,
-      "avg_price": 325,
-      "avg_reviews": 33,
-      "avg_rating": 4.75,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 738,
+      "scraped_products": 48,
+      "avg_price": 558,
+      "avg_reviews": 32,
+      "avg_rating": 4.64,
+      "unique_sellers": 12,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0206,
-      "price_min": 165,
-      "price_max": 2382,
-      "price_std": 386.67,
-      "price_concentration": 0.5714,
-      "low_rating_ratio": 0.2857,
-      "top10_avg_reviews": 35,
-      "top10_avg_rating": 4.73,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 7,
+      "ozon_self_ratio": 0.0717,
+      "price_min": 132,
+      "price_max": 1606,
+      "price_std": 485.31,
+      "price_concentration": 0.5097,
+      "low_rating_ratio": 0.2843,
+      "top10_avg_reviews": 78,
+      "top10_avg_rating": 4.55,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 3,
       "price_distribution": {
         "≤300₽": {
-          "count": 7,
-          "ratio": 0.1342
+          "count": 9,
+          "ratio": 0.0827
         },
         "300-500₽": {
           "count": 14,
-          "ratio": 0.2493
+          "ratio": 0.234
         },
         "500-1000₽": {
-          "count": 12,
-          "ratio": 0.2956
+          "count": 19,
+          "ratio": 0.3434
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.1778
+          "count": 8,
+          "ratio": 0.1814
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.0905
+          "count": 4,
+          "ratio": 0.0668
         }
       },
       "products": []
@@ -1157,44 +1157,44 @@
         "轻小件",
         "达恰刚需"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 378,
-      "scraped_products": 71,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 572,
+      "scraped_products": 50,
       "avg_price": 774,
-      "avg_reviews": 69,
-      "avg_rating": 4.65,
-      "unique_sellers": 6,
+      "avg_reviews": 81,
+      "avg_rating": 4.4,
+      "unique_sellers": 11,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.02,
-      "price_min": 232,
-      "price_max": 2498,
-      "price_std": 205.68,
-      "price_concentration": 0.5143,
-      "low_rating_ratio": 0.1726,
-      "top10_avg_reviews": 81,
-      "top10_avg_rating": 4.48,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 10,
+      "ozon_self_ratio": 0.0785,
+      "price_min": 137,
+      "price_max": 1622,
+      "price_std": 481.88,
+      "price_concentration": 0.5776,
+      "low_rating_ratio": 0.1691,
+      "top10_avg_reviews": 96,
+      "top10_avg_rating": 4.29,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 6,
       "price_distribution": {
         "≤300₽": {
-          "count": 3,
-          "ratio": 0.1165
+          "count": 5,
+          "ratio": 0.1108
         },
         "300-500₽": {
-          "count": 15,
-          "ratio": 0.2301
+          "count": 10,
+          "ratio": 0.2318
         },
         "500-1000₽": {
-          "count": 14,
-          "ratio": 0.2243
+          "count": 20,
+          "ratio": 0.2542
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.1062
+          "count": 10,
+          "ratio": 0.1079
         },
         "≥1500₽": {
-          "count": 4,
-          "ratio": 0.0766
+          "count": 2,
+          "ratio": 0.0791
         }
       },
       "products": []
@@ -1209,44 +1209,44 @@
         "轻小件",
         "智能家居延伸"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 105,
-      "scraped_products": 24,
-      "avg_price": 885,
-      "avg_reviews": 137,
-      "avg_rating": 4.55,
-      "unique_sellers": 12,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 150,
+      "scraped_products": 41,
+      "avg_price": 592,
+      "avg_reviews": 51,
+      "avg_rating": 4.68,
+      "unique_sellers": 8,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0106,
-      "price_min": 181,
-      "price_max": 2212,
-      "price_std": 450.62,
-      "price_concentration": 0.5267,
-      "low_rating_ratio": 0.2447,
-      "top10_avg_reviews": 70,
-      "top10_avg_rating": 4.54,
-      "top10_ozon_self_count": 0,
-      "top10_seller_count": 5,
+      "ozon_self_ratio": 0.0132,
+      "price_min": 145,
+      "price_max": 2873,
+      "price_std": 229.21,
+      "price_concentration": 0.4887,
+      "low_rating_ratio": 0.263,
+      "top10_avg_reviews": 72,
+      "top10_avg_rating": 4.49,
+      "top10_ozon_self_count": 2,
+      "top10_seller_count": 10,
       "price_distribution": {
         "≤300₽": {
-          "count": 5,
-          "ratio": 0.0971
+          "count": 7,
+          "ratio": 0.091
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.1122
+          "count": 5,
+          "ratio": 0.2287
         },
         "500-1000₽": {
-          "count": 20,
-          "ratio": 0.2894
+          "count": 9,
+          "ratio": 0.3315
         },
         "1000-1500₽": {
-          "count": 4,
-          "ratio": 0.1034
+          "count": 5,
+          "ratio": 0.0531
         },
         "≥1500₽": {
-          "count": 2,
-          "ratio": 0.0845
+          "count": 6,
+          "ratio": 0.0512
         }
       },
       "products": []
@@ -1261,44 +1261,44 @@
         "轻小件",
         "达恰装饰"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 569,
-      "scraped_products": 33,
-      "avg_price": 552,
-      "avg_reviews": 31,
-      "avg_rating": 4.79,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 748,
+      "scraped_products": 94,
+      "avg_price": 938,
+      "avg_reviews": 65,
+      "avg_rating": 4.67,
+      "unique_sellers": 5,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0576,
-      "price_min": 133,
-      "price_max": 2519,
-      "price_std": 468.43,
-      "price_concentration": 0.3777,
-      "low_rating_ratio": 0.2055,
-      "top10_avg_reviews": 94,
-      "top10_avg_rating": 4.74,
-      "top10_ozon_self_count": 1,
-      "top10_seller_count": 7,
+      "ozon_self_ratio": 0.0252,
+      "price_min": 178,
+      "price_max": 2305,
+      "price_std": 211.75,
+      "price_concentration": 0.4534,
+      "low_rating_ratio": 0.1893,
+      "top10_avg_reviews": 69,
+      "top10_avg_rating": 4.52,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
-          "count": 9,
-          "ratio": 0.1351
+          "count": 7,
+          "ratio": 0.1327
         },
         "300-500₽": {
-          "count": 8,
-          "ratio": 0.1645
+          "count": 7,
+          "ratio": 0.2331
         },
         "500-1000₽": {
-          "count": 13,
-          "ratio": 0.2201
+          "count": 12,
+          "ratio": 0.32
         },
         "1000-1500₽": {
-          "count": 6,
-          "ratio": 0.1524
+          "count": 7,
+          "ratio": 0.194
         },
         "≥1500₽": {
-          "count": 8,
-          "ratio": 0.0935
+          "count": 3,
+          "ratio": 0.1268
         }
       },
       "products": []
@@ -1313,44 +1313,44 @@
         "轻小件",
         "度假季"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 249,
-      "scraped_products": 85,
-      "avg_price": 328,
-      "avg_reviews": 55,
-      "avg_rating": 4.77,
-      "unique_sellers": 13,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 180,
+      "scraped_products": 70,
+      "avg_price": 890,
+      "avg_reviews": 117,
+      "avg_rating": 4.51,
+      "unique_sellers": 10,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0233,
-      "price_min": 150,
-      "price_max": 1812,
-      "price_std": 215.65,
-      "price_concentration": 0.5586,
-      "low_rating_ratio": 0.2664,
-      "top10_avg_reviews": 98,
-      "top10_avg_rating": 4.69,
+      "ozon_self_ratio": 0.0081,
+      "price_min": 170,
+      "price_max": 2360,
+      "price_std": 159.89,
+      "price_concentration": 0.4556,
+      "low_rating_ratio": 0.2381,
+      "top10_avg_reviews": 81,
+      "top10_avg_rating": 4.36,
       "top10_ozon_self_count": 2,
-      "top10_seller_count": 8,
+      "top10_seller_count": 6,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0764
+          "count": 9,
+          "ratio": 0.1481
         },
         "300-500₽": {
-          "count": 9,
-          "ratio": 0.1706
+          "count": 12,
+          "ratio": 0.1697
         },
         "500-1000₽": {
-          "count": 17,
-          "ratio": 0.2862
+          "count": 15,
+          "ratio": 0.3182
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.1285
+          "count": 5,
+          "ratio": 0.1157
         },
         "≥1500₽": {
           "count": 4,
-          "ratio": 0.1419
+          "ratio": 0.1432
         }
       },
       "products": []
@@ -1366,44 +1366,44 @@
         "低佣金5-8%",
         "高复购"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 115,
-      "scraped_products": 83,
-      "avg_price": 908,
-      "avg_reviews": 127,
-      "avg_rating": 4.32,
-      "unique_sellers": 6,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 722,
+      "scraped_products": 53,
+      "avg_price": 564,
+      "avg_reviews": 55,
+      "avg_rating": 4.71,
+      "unique_sellers": 9,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0731,
-      "price_min": 131,
-      "price_max": 2722,
-      "price_std": 419.19,
-      "price_concentration": 0.4556,
-      "low_rating_ratio": 0.2699,
-      "top10_avg_reviews": 68,
-      "top10_avg_rating": 4.14,
+      "ozon_self_ratio": 0.0507,
+      "price_min": 218,
+      "price_max": 1665,
+      "price_std": 205.92,
+      "price_concentration": 0.4532,
+      "low_rating_ratio": 0.1966,
+      "top10_avg_reviews": 20,
+      "top10_avg_rating": 4.65,
       "top10_ozon_self_count": 0,
-      "top10_seller_count": 3,
+      "top10_seller_count": 9,
       "price_distribution": {
         "≤300₽": {
-          "count": 10,
-          "ratio": 0.123
+          "count": 2,
+          "ratio": 0.0811
         },
         "300-500₽": {
-          "count": 13,
-          "ratio": 0.1309
+          "count": 10,
+          "ratio": 0.1008
         },
         "500-1000₽": {
-          "count": 8,
-          "ratio": 0.2737
+          "count": 18,
+          "ratio": 0.3059
         },
         "1000-1500₽": {
           "count": 6,
-          "ratio": 0.1099
+          "ratio": 0.0572
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.0671
+          "count": 7,
+          "ratio": 0.1013
         }
       },
       "products": []
@@ -1418,44 +1418,44 @@
         "轻小件",
         "政策红利"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 100,
-      "scraped_products": 29,
-      "avg_price": 581,
-      "avg_reviews": 104,
-      "avg_rating": 4.65,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 163,
+      "scraped_products": 72,
+      "avg_price": 531,
+      "avg_reviews": 83,
+      "avg_rating": 4.42,
+      "unique_sellers": 12,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0324,
-      "price_min": 228,
-      "price_max": 2965,
-      "price_std": 197.23,
-      "price_concentration": 0.5231,
-      "low_rating_ratio": 0.1714,
-      "top10_avg_reviews": 60,
-      "top10_avg_rating": 4.5,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 9,
+      "ozon_self_ratio": 0.009,
+      "price_min": 155,
+      "price_max": 2540,
+      "price_std": 347.28,
+      "price_concentration": 0.5251,
+      "low_rating_ratio": 0.2897,
+      "top10_avg_reviews": 21,
+      "top10_avg_rating": 4.35,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 8,
-          "ratio": 0.0568
+          "count": 9,
+          "ratio": 0.0939
         },
         "300-500₽": {
-          "count": 5,
-          "ratio": 0.1576
+          "count": 13,
+          "ratio": 0.222
         },
         "500-1000₽": {
-          "count": 17,
-          "ratio": 0.335
+          "count": 15,
+          "ratio": 0.2289
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.1564
+          "count": 9,
+          "ratio": 0.0893
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.1037
+          "count": 5,
+          "ratio": 0.0584
         }
       },
       "products": []
@@ -1470,44 +1470,44 @@
         "轻小件",
         "教育蓝海"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 169,
-      "scraped_products": 95,
-      "avg_price": 301,
-      "avg_reviews": 25,
-      "avg_rating": 4.23,
-      "unique_sellers": 3,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 84,
+      "scraped_products": 71,
+      "avg_price": 538,
+      "avg_reviews": 34,
+      "avg_rating": 4.65,
+      "unique_sellers": 5,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0214,
-      "price_min": 229,
-      "price_max": 2770,
-      "price_std": 183.81,
-      "price_concentration": 0.3349,
-      "low_rating_ratio": 0.1805,
-      "top10_avg_reviews": 28,
-      "top10_avg_rating": 4.08,
+      "ozon_self_ratio": 0.024,
+      "price_min": 124,
+      "price_max": 2687,
+      "price_std": 387.62,
+      "price_concentration": 0.4756,
+      "low_rating_ratio": 0.1606,
+      "top10_avg_reviews": 8,
+      "top10_avg_rating": 4.57,
       "top10_ozon_self_count": 0,
       "top10_seller_count": 4,
       "price_distribution": {
         "≤300₽": {
           "count": 9,
-          "ratio": 0.1
+          "ratio": 0.0878
         },
         "300-500₽": {
-          "count": 14,
-          "ratio": 0.1308
+          "count": 5,
+          "ratio": 0.248
         },
         "500-1000₽": {
-          "count": 8,
-          "ratio": 0.2363
+          "count": 12,
+          "ratio": 0.2654
         },
         "1000-1500₽": {
-          "count": 10,
-          "ratio": 0.0871
+          "count": 5,
+          "ratio": 0.0657
         },
         "≥1500₽": {
-          "count": 4,
-          "ratio": 0.0814
+          "count": 2,
+          "ratio": 0.0955
         }
       },
       "products": []
@@ -1523,44 +1523,44 @@
         "低佣金",
         "环保趋势"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 195,
-      "scraped_products": 21,
-      "avg_price": 985,
-      "avg_reviews": 54,
-      "avg_rating": 4.68,
-      "unique_sellers": 5,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 284,
+      "scraped_products": 43,
+      "avg_price": 674,
+      "avg_reviews": 28,
+      "avg_rating": 4.65,
+      "unique_sellers": 4,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0103,
-      "price_min": 141,
-      "price_max": 2717,
-      "price_std": 246.08,
-      "price_concentration": 0.3728,
-      "low_rating_ratio": 0.2131,
-      "top10_avg_reviews": 20,
-      "top10_avg_rating": 4.63,
+      "ozon_self_ratio": 0.0304,
+      "price_min": 212,
+      "price_max": 2757,
+      "price_std": 266.81,
+      "price_concentration": 0.3944,
+      "low_rating_ratio": 0.2133,
+      "top10_avg_reviews": 13,
+      "top10_avg_rating": 4.5,
       "top10_ozon_self_count": 0,
-      "top10_seller_count": 3,
+      "top10_seller_count": 6,
       "price_distribution": {
         "≤300₽": {
-          "count": 6,
-          "ratio": 0.059
+          "count": 9,
+          "ratio": 0.1304
         },
         "300-500₽": {
-          "count": 10,
-          "ratio": 0.213
+          "count": 14,
+          "ratio": 0.114
         },
         "500-1000₽": {
-          "count": 11,
-          "ratio": 0.2274
+          "count": 9,
+          "ratio": 0.2917
         },
         "1000-1500₽": {
-          "count": 9,
-          "ratio": 0.1489
+          "count": 4,
+          "ratio": 0.184
         },
         "≥1500₽": {
-          "count": 5,
-          "ratio": 0.0916
+          "count": 8,
+          "ratio": 0.051
         }
       },
       "products": []
@@ -1575,44 +1575,44 @@
         "轻小件",
         "当前窗口"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 675,
-      "scraped_products": 46,
-      "avg_price": 864,
-      "avg_reviews": 47,
-      "avg_rating": 4.4,
-      "unique_sellers": 8,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 445,
+      "scraped_products": 62,
+      "avg_price": 628,
+      "avg_reviews": 94,
+      "avg_rating": 4.32,
+      "unique_sellers": 11,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0577,
-      "price_min": 247,
-      "price_max": 2102,
-      "price_std": 157.7,
-      "price_concentration": 0.5545,
-      "low_rating_ratio": 0.2245,
-      "top10_avg_reviews": 90,
-      "top10_avg_rating": 4.32,
+      "ozon_self_ratio": 0.0321,
+      "price_min": 172,
+      "price_max": 1695,
+      "price_std": 312.91,
+      "price_concentration": 0.4895,
+      "low_rating_ratio": 0.2352,
+      "top10_avg_reviews": 20,
+      "top10_avg_rating": 4.3,
       "top10_ozon_self_count": 1,
       "top10_seller_count": 10,
       "price_distribution": {
         "≤300₽": {
-          "count": 6,
-          "ratio": 0.0547
+          "count": 4,
+          "ratio": 0.0627
         },
         "300-500₽": {
-          "count": 9,
-          "ratio": 0.179
+          "count": 14,
+          "ratio": 0.1119
         },
         "500-1000₽": {
-          "count": 8,
-          "ratio": 0.3091
+          "count": 10,
+          "ratio": 0.2517
         },
         "1000-1500₽": {
-          "count": 6,
-          "ratio": 0.1918
+          "count": 5,
+          "ratio": 0.1289
         },
         "≥1500₽": {
-          "count": 8,
-          "ratio": 0.0711
+          "count": 6,
+          "ratio": 0.1449
         }
       },
       "products": []
@@ -1628,44 +1628,44 @@
         "当前窗口",
         "成本¥15卖¥80-120"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 403,
-      "scraped_products": 41,
-      "avg_price": 833,
-      "avg_reviews": 80,
-      "avg_rating": 4.59,
-      "unique_sellers": 15,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 542,
+      "scraped_products": 55,
+      "avg_price": 767,
+      "avg_reviews": 102,
+      "avg_rating": 4.68,
+      "unique_sellers": 11,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0116,
-      "price_min": 169,
-      "price_max": 2803,
-      "price_std": 360.19,
-      "price_concentration": 0.4914,
-      "low_rating_ratio": 0.2814,
-      "top10_avg_reviews": 92,
-      "top10_avg_rating": 4.46,
+      "ozon_self_ratio": 0.0599,
+      "price_min": 234,
+      "price_max": 2329,
+      "price_std": 247.35,
+      "price_concentration": 0.5694,
+      "low_rating_ratio": 0.1738,
+      "top10_avg_reviews": 33,
+      "top10_avg_rating": 4.56,
       "top10_ozon_self_count": 1,
-      "top10_seller_count": 4,
+      "top10_seller_count": 9,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0824
+          "count": 9,
+          "ratio": 0.0621
         },
         "300-500₽": {
-          "count": 13,
-          "ratio": 0.121
+          "count": 7,
+          "ratio": 0.2444
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.3077
+          "count": 11,
+          "ratio": 0.2702
         },
         "1000-1500₽": {
-          "count": 6,
-          "ratio": 0.1199
+          "count": 5,
+          "ratio": 0.1759
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.0777
+          "count": 2,
+          "ratio": 0.0554
         }
       },
       "products": []
@@ -1680,44 +1680,44 @@
         "轻小件",
         "户外钓鱼季"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 114,
-      "scraped_products": 44,
-      "avg_price": 456,
-      "avg_reviews": 144,
-      "avg_rating": 4.58,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 757,
+      "scraped_products": 29,
+      "avg_price": 316,
+      "avg_reviews": 146,
+      "avg_rating": 4.38,
       "unique_sellers": 12,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0569,
-      "price_min": 199,
-      "price_max": 2112,
-      "price_std": 406.56,
-      "price_concentration": 0.36,
-      "low_rating_ratio": 0.1697,
-      "top10_avg_reviews": 23,
-      "top10_avg_rating": 4.43,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 6,
+      "ozon_self_ratio": 0.0171,
+      "price_min": 240,
+      "price_max": 2093,
+      "price_std": 178.43,
+      "price_concentration": 0.393,
+      "low_rating_ratio": 0.2473,
+      "top10_avg_reviews": 25,
+      "top10_avg_rating": 4.29,
+      "top10_ozon_self_count": 1,
+      "top10_seller_count": 5,
       "price_distribution": {
         "≤300₽": {
-          "count": 2,
-          "ratio": 0.0581
+          "count": 4,
+          "ratio": 0.0917
         },
         "300-500₽": {
-          "count": 8,
-          "ratio": 0.2091
+          "count": 10,
+          "ratio": 0.2395
         },
         "500-1000₽": {
-          "count": 16,
-          "ratio": 0.33
+          "count": 19,
+          "ratio": 0.2839
         },
         "1000-1500₽": {
-          "count": 7,
-          "ratio": 0.0766
+          "count": 3,
+          "ratio": 0.0627
         },
         "≥1500₽": {
           "count": 4,
-          "ratio": 0.0866
+          "ratio": 0.1007
         }
       },
       "products": []
@@ -1732,44 +1732,44 @@
         "轻小件",
         "需提前备货"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 409,
-      "scraped_products": 97,
-      "avg_price": 2424,
-      "avg_reviews": 117,
-      "avg_rating": 4.72,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 724,
+      "scraped_products": 64,
+      "avg_price": 2283,
+      "avg_reviews": 138,
+      "avg_rating": 4.63,
+      "unique_sellers": 15,
       "ozon_self_count": 1,
-      "ozon_self_ratio": 0.0795,
-      "price_min": 472,
-      "price_max": 4142,
-      "price_std": 492.3,
-      "price_concentration": 0.4043,
-      "low_rating_ratio": 0.2343,
-      "top10_avg_reviews": 49,
-      "top10_avg_rating": 4.55,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 6,
+      "ozon_self_ratio": 0.0733,
+      "price_min": 318,
+      "price_max": 4622,
+      "price_std": 330.41,
+      "price_concentration": 0.3642,
+      "low_rating_ratio": 0.1646,
+      "top10_avg_reviews": 78,
+      "top10_avg_rating": 4.52,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 10,
       "price_distribution": {
         "≤300₽": {
-          "count": 8,
-          "ratio": 0.1139
+          "count": 4,
+          "ratio": 0.1305
         },
         "300-500₽": {
-          "count": 6,
-          "ratio": 0.2098
+          "count": 9,
+          "ratio": 0.2111
         },
         "500-1000₽": {
-          "count": 17,
-          "ratio": 0.3371
+          "count": 18,
+          "ratio": 0.3005
         },
         "1000-1500₽": {
-          "count": 6,
-          "ratio": 0.0579
+          "count": 7,
+          "ratio": 0.0718
         },
         "≥1500₽": {
           "count": 2,
-          "ratio": 0.0936
+          "ratio": 0.0528
         }
       },
       "products": []
@@ -1784,44 +1784,44 @@
         "轻小件",
         "需提前备货"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 717,
-      "scraped_products": 81,
-      "avg_price": 1495,
-      "avg_reviews": 143,
-      "avg_rating": 4.37,
-      "unique_sellers": 12,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 188,
+      "scraped_products": 67,
+      "avg_price": 1336,
+      "avg_reviews": 128,
+      "avg_rating": 4.49,
+      "unique_sellers": 6,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0549,
-      "price_min": 413,
-      "price_max": 4218,
-      "price_std": 176.99,
-      "price_concentration": 0.5613,
-      "low_rating_ratio": 0.2655,
-      "top10_avg_reviews": 37,
-      "top10_avg_rating": 4.2,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 9,
+      "ozon_self_ratio": 0.0445,
+      "price_min": 312,
+      "price_max": 3050,
+      "price_std": 173.53,
+      "price_concentration": 0.383,
+      "low_rating_ratio": 0.2447,
+      "top10_avg_reviews": 65,
+      "top10_avg_rating": 4.44,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 8,
       "price_distribution": {
         "≤300₽": {
-          "count": 4,
-          "ratio": 0.1147
+          "count": 8,
+          "ratio": 0.1048
         },
         "300-500₽": {
-          "count": 7,
-          "ratio": 0.2404
+          "count": 9,
+          "ratio": 0.2041
         },
         "500-1000₽": {
-          "count": 13,
-          "ratio": 0.2053
+          "count": 17,
+          "ratio": 0.2048
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.0802
+          "count": 6,
+          "ratio": 0.1135
         },
         "≥1500₽": {
-          "count": 6,
-          "ratio": 0.1466
+          "count": 3,
+          "ratio": 0.06
         }
       },
       "products": []
@@ -1836,44 +1836,44 @@
         "轻小件",
         "冲动消费高"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 226,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 673,
       "scraped_products": 48,
-      "avg_price": 699,
-      "avg_reviews": 97,
-      "avg_rating": 4.79,
-      "unique_sellers": 9,
+      "avg_price": 343,
+      "avg_reviews": 67,
+      "avg_rating": 4.52,
+      "unique_sellers": 5,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0042,
-      "price_min": 104,
-      "price_max": 1838,
-      "price_std": 370.16,
-      "price_concentration": 0.4212,
-      "low_rating_ratio": 0.1806,
-      "top10_avg_reviews": 91,
-      "top10_avg_rating": 4.67,
-      "top10_ozon_self_count": 2,
-      "top10_seller_count": 3,
+      "ozon_self_ratio": 0.0267,
+      "price_min": 222,
+      "price_max": 1966,
+      "price_std": 187.01,
+      "price_concentration": 0.379,
+      "low_rating_ratio": 0.2675,
+      "top10_avg_reviews": 19,
+      "top10_avg_rating": 4.35,
+      "top10_ozon_self_count": 0,
+      "top10_seller_count": 7,
       "price_distribution": {
         "≤300₽": {
-          "count": 8,
-          "ratio": 0.0815
+          "count": 2,
+          "ratio": 0.0795
         },
         "300-500₽": {
-          "count": 14,
-          "ratio": 0.1315
+          "count": 12,
+          "ratio": 0.128
         },
         "500-1000₽": {
-          "count": 18,
-          "ratio": 0.3267
+          "count": 19,
+          "ratio": 0.3282
         },
         "1000-1500₽": {
-          "count": 3,
-          "ratio": 0.1017
+          "count": 7,
+          "ratio": 0.056
         },
         "≥1500₽": {
-          "count": 5,
-          "ratio": 0.0815
+          "count": 3,
+          "ratio": 0.0627
         }
       },
       "products": []
@@ -1888,44 +1888,44 @@
         "轻小件",
         "全年利润30-40%来自此阶段"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 414,
-      "scraped_products": 21,
-      "avg_price": 359,
-      "avg_reviews": 107,
-      "avg_rating": 4.49,
-      "unique_sellers": 14,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 366,
+      "scraped_products": 75,
+      "avg_price": 697,
+      "avg_reviews": 105,
+      "avg_rating": 4.32,
+      "unique_sellers": 8,
       "ozon_self_count": 0,
-      "ozon_self_ratio": 0.0062,
-      "price_min": 168,
-      "price_max": 2275,
-      "price_std": 339.89,
-      "price_concentration": 0.4213,
-      "low_rating_ratio": 0.2234,
-      "top10_avg_reviews": 96,
-      "top10_avg_rating": 4.41,
-      "top10_ozon_self_count": 0,
+      "ozon_self_ratio": 0.0633,
+      "price_min": 186,
+      "price_max": 1854,
+      "price_std": 316.55,
+      "price_concentration": 0.5788,
+      "low_rating_ratio": 0.2114,
+      "top10_avg_reviews": 63,
+      "top10_avg_rating": 4.13,
+      "top10_ozon_self_count": 1,
       "top10_seller_count": 7,
       "price_distribution": {
         "≤300₽": {
           "count": 3,
-          "ratio": 0.0568
+          "ratio": 0.102
         },
         "300-500₽": {
-          "count": 10,
-          "ratio": 0.1919
+          "count": 8,
+          "ratio": 0.1228
         },
         "500-1000₽": {
-          "count": 15,
-          "ratio": 0.2541
+          "count": 17,
+          "ratio": 0.2705
         },
         "1000-1500₽": {
-          "count": 4,
-          "ratio": 0.1708
+          "count": 8,
+          "ratio": 0.0721
         },
         "≥1500₽": {
-          "count": 7,
-          "ratio": 0.1269
+          "count": 2,
+          "ratio": 0.097
         }
       },
       "products": []
@@ -1939,44 +1939,44 @@
         "超饱和",
         "不入场"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 5381,
-      "scraped_products": 36,
-      "avg_price": 390,
-      "avg_reviews": 2744,
-      "avg_rating": 4.48,
-      "unique_sellers": 58,
-      "ozon_self_count": 19,
-      "ozon_self_ratio": 0.3418,
-      "price_min": 93,
-      "price_max": 777,
-      "price_std": 470.58,
-      "price_concentration": 0.1183,
-      "low_rating_ratio": 0.0694,
-      "top10_avg_reviews": 741,
-      "top10_avg_rating": 4.4,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 8445,
+      "scraped_products": 28,
+      "avg_price": 294,
+      "avg_reviews": 1656,
+      "avg_rating": 4.17,
+      "unique_sellers": 79,
+      "ozon_self_count": 12,
+      "ozon_self_ratio": 0.1592,
+      "price_min": 75,
+      "price_max": 981,
+      "price_std": 261.98,
+      "price_concentration": 0.094,
+      "low_rating_ratio": 0.1188,
+      "top10_avg_reviews": 725,
+      "top10_avg_rating": 4.17,
       "top10_ozon_self_count": 4,
-      "top10_seller_count": 26,
+      "top10_seller_count": 21,
       "price_distribution": {
         "≤300₽": {
-          "count": 10,
-          "ratio": 0.1003
+          "count": 2,
+          "ratio": 0.079
         },
         "300-500₽": {
-          "count": 5,
-          "ratio": 0.1087
+          "count": 11,
+          "ratio": 0.1337
         },
         "500-1000₽": {
-          "count": 8,
-          "ratio": 0.3129
+          "count": 15,
+          "ratio": 0.3247
         },
         "1000-1500₽": {
           "count": 6,
-          "ratio": 0.1039
+          "ratio": 0.1955
         },
         "≥1500₽": {
-          "count": 4,
-          "ratio": 0.0648
+          "count": 3,
+          "ratio": 0.0639
         }
       },
       "products": []
@@ -1990,44 +1990,44 @@
         "退货率高",
         "不入场"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 6494,
-      "scraped_products": 33,
-      "avg_price": 724,
-      "avg_reviews": 1887,
-      "avg_rating": 4.35,
-      "unique_sellers": 97,
-      "ozon_self_count": 27,
-      "ozon_self_ratio": 0.2786,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 8153,
+      "scraped_products": 42,
+      "avg_price": 341,
+      "avg_reviews": 891,
+      "avg_rating": 4.43,
+      "unique_sellers": 50,
+      "ozon_self_count": 12,
+      "ozon_self_ratio": 0.2417,
       "price_min": 223,
-      "price_max": 2558,
-      "price_std": 270.93,
-      "price_concentration": 0.147,
-      "low_rating_ratio": 0.1142,
-      "top10_avg_reviews": 1695,
-      "top10_avg_rating": 4.3,
-      "top10_ozon_self_count": 3,
-      "top10_seller_count": 21,
+      "price_max": 2047,
+      "price_std": 133.45,
+      "price_concentration": 0.1263,
+      "low_rating_ratio": 0.1128,
+      "top10_avg_reviews": 693,
+      "top10_avg_rating": 4.23,
+      "top10_ozon_self_count": 4,
+      "top10_seller_count": 23,
       "price_distribution": {
         "≤300₽": {
-          "count": 7,
-          "ratio": 0.1443
+          "count": 10,
+          "ratio": 0.0528
         },
         "300-500₽": {
-          "count": 12,
-          "ratio": 0.1685
+          "count": 10,
+          "ratio": 0.2227
         },
         "500-1000₽": {
-          "count": 19,
-          "ratio": 0.2577
+          "count": 15,
+          "ratio": 0.293
         },
         "1000-1500₽": {
-          "count": 4,
-          "ratio": 0.0776
+          "count": 10,
+          "ratio": 0.1916
         },
         "≥1500₽": {
-          "count": 3,
-          "ratio": 0.1001
+          "count": 5,
+          "ratio": 0.0723
         }
       },
       "products": []
@@ -2041,44 +2041,44 @@
         "超饱和",
         "不入场"
       ],
-      "timestamp": "2026-08-09T07:05:42.985619",
-      "total_search_results": 18004,
-      "scraped_products": 58,
-      "avg_price": 199,
-      "avg_reviews": 1221,
-      "avg_rating": 4.3,
-      "unique_sellers": 50,
-      "ozon_self_count": 16,
-      "ozon_self_ratio": 0.331,
-      "price_min": 56,
-      "price_max": 1444,
-      "price_std": 356.33,
-      "price_concentration": 0.1151,
-      "low_rating_ratio": 0.0792,
-      "top10_avg_reviews": 1602,
-      "top10_avg_rating": 4.11,
-      "top10_ozon_self_count": 3,
-      "top10_seller_count": 16,
+      "timestamp": "2026-08-10T07:53:31.567767",
+      "total_search_results": 15022,
+      "scraped_products": 88,
+      "avg_price": 341,
+      "avg_reviews": 941,
+      "avg_rating": 4.31,
+      "unique_sellers": 88,
+      "ozon_self_count": 30,
+      "ozon_self_ratio": 0.3424,
+      "price_min": 86,
+      "price_max": 843,
+      "price_std": 249.49,
+      "price_concentration": 0.0856,
+      "low_rating_ratio": 0.0718,
+      "top10_avg_reviews": 1004,
+      "top10_avg_rating": 4.27,
+      "top10_ozon_self_count": 4,
+      "top10_seller_count": 28,
       "price_distribution": {
         "≤300₽": {
-          "count": 4,
-          "ratio": 0.0504
+          "count": 2,
+          "ratio": 0.1431
         },
         "300-500₽": {
-          "count": 9,
-          "ratio": 0.1268
+          "count": 12,
+          "ratio": 0.1592
         },
         "500-1000₽": {
-          "count": 13,
-          "ratio": 0.3181
+          "count": 15,
+          "ratio": 0.2836
         },
         "1000-1500₽": {
           "count": 10,
-          "ratio": 0.1899
+          "ratio": 0.1077
         },
         "≥1500₽": {
-          "count": 5,
-          "ratio": 0.1485
+          "count": 2,
+          "ratio": 0.1046
         }
       },
       "products": []
